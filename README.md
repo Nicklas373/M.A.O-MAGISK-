@@ -41,4 +41,4 @@ Current lib that used for this patch is from :
 
 Other Information Catalog:
 - [FAQ](https://github.com/Nicklas373/Internal_DAC_Fixer/blob/master/docs/FAQ.md)
-- [How to check internal DAC is working] (https://github.com/Nicklas373/Internal_DAC_Fixer/blob/master/docs/Neutron.md)
+- [How to check internal DAC is working](https://github.com/Nicklas373/Internal_DAC_Fixer/blob/master/docs/Neutron.md)
