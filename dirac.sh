@@ -8,6 +8,7 @@ mounting(){
 
 #Backup your stock libs file
 backup(){
+	mkdir /sdcard/backup
 	mkdir /sdcard/backup/lib
 	mkdir /sdcard/backup/lib64
 	mkdir /sdcard/backup/vendor
