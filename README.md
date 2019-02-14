@@ -1,17 +1,43 @@
-# Internal_DAC_Fixer
+# Mido Internal DAC Fixer for android 9.0.x (AOSP/LOS)
 
-#Introduction & FAQ
+This is a flashable zip that containt several libs to restore capatibility of accessing to internal DAC (DIRECT/DIRECT_PCM) from audio policy on Mido devices after getting updates to latest Pie versions.
 
-- What is DAC? 
-: For simply documentation, DAC (Digital-To-Analog Converter)  A DAC takes digital data and transforms it into an analog audio signal. Afterward, it sends that analog signal to an amplifier. When you hear digital recordings, you’re actually listening to an analog signal that was converted from digital by a DAC. Even if you can’t see the DAC – although you sometimes can, as we’ll explore shortly – it’s there (from: https://www.audioadvice.com/content/what-is-a-dac/)
+This package will restore all lib,libs64 and audio_effects.xml to vendor/etc to your system and remove all DIRAC Audio Effects from over the system.
 
-- Is Mido / Redmi Note 4X have a DAC?
-: For generally isn't, DAC is a external hardware but Qualcomm somehow include that hardware into our soundcard (wcd9335) with Qualcomm Aqstic™ Audio Codec that support Hi-Fi / Hi-Res Playback up to 24bit / 192Khz (from: https://www.qualcomm.com/products/wcd9335)
+Why DIRAC Audio Effects is removed?
+Dirac Audio Effects should and must be removed cause that can downsample bitdepth to 16 bit whenever device request to 24 bit or higher, so when user want try to access hi-res frequency like 24bit / 96Khz or higher, DIRAC will chains to audio route and convert bitdepth to 16 bit after get processing to 24bit or higher by DIRECT/DIRECT_PCM audio policy.
 
-- So Mido shouldn't have any problem with that feature, right?
-: If you're on stock ROM (MIUI) then you'll be fine, cause DAC in that ROM is perfectly working, but if you're on custom ROM, specially for oreo or higher then i'm not sure. Since so much change on audio CAF or blobs source for following stream to always up to date, then some features like this can't be accessed.
+This package only have aim to restore internal DAC capatibility, no other else and not have any means to insult anyone that work with mido since this is only for my personal use. (Anyone can used, but DWYOR)
 
-- How can i know if my DAC is working or not in Oreo or Pie ROMs?
-: You can use application on playstore that can have access to your DAC directly without any preset or effects, so far i only tested on Neutron Music Player and UAPP.
+What's lib that get replaced :
+- /system/lib/libaudioclient.so
+- /system/lib/libaudioeffect_jni.so
+- /system/lib/libaudioflinger.so
+- /system/lib/libaudiopolicyenginedefault.so
+- /system/lib/libaudiopolicymanager.so
+- /system/lib/libaudiopolicymanagerdefault.so
+- /system/lib/libaudiopolicyservice.so
+- /system/lib/libaudioprocessing.so
+- /system/lib/libsoundpool.so
+- /system/lib/libsoundtrigger.so
+- /system/lib/libsoundtriggerservice.so
+- /system/lib64/libaudioclient.so
+- /system/lib64/libaudiopolicyenginedefault.so
+- /system/lib64/libaudiopolicymanager.so
+- /system/lib64/libaudiopolicymanagerdefault.so
+- /system/lib64/libaudiopolicyservice.so
+- /system/lib64/libaudioroute.so
+- /vendor/etc/audio_effects.xml
 
-Documentation will continue later,,,, 
+What's lib that removed :
+- /system/lib/soundfx/libdirac.so
+- /system/lib/libDiracAPI_SHARED.so
+- /system/vendor/etc/diracmobile.config
+- String "/persist.audio.dirac.speaker=true/d" on vendor/build.prop
+
+Compatibitily ROM of this patch (so far that i tested):
+- XenonHD Experimental Build
+- Syberia OS Official Build
+
+Current lib that used for this patch is from :
+- LiquidRemix 20181220 Official Build
