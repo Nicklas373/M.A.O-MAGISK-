@@ -41,3 +41,6 @@ Compatibitily ROM of this patch (so far that i tested):
 
 Current lib that used for this patch is from :
 - LiquidRemix 20181220 Official Build
+
+Other Information Catalog:
+- [FAQ](https://github.com/Nicklas373/Internal_DAC_Fixer/blob/master/docs/FAQ.md)
