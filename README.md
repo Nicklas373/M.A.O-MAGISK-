@@ -4,10 +4,7 @@ This is a flashable zip that containt several libs to restore capatibility of ac
 
 This package will restore all lib,libs64 and audio_effects.xml to vendor/etc to your system and remove all DIRAC Audio Effects from over the system.
 
-Why DIRAC Audio Effects is removed?
-Dirac Audio Effects should and must be removed cause that can downsample bitdepth to 16 bit whenever device request to 24 bit or higher, so when user want try to access hi-res frequency like 24bit / 96Khz or higher, DIRAC will chains to audio route and convert bitdepth to 16 bit after get processing to 24bit or higher by DIRECT/DIRECT_PCM audio policy.
-
-This package only have aim to restore internal DAC capatibility, no other else and not have any means to insult anyone that work with mido since this is only for my personal use. (Anyone can used, but DWYOR)
+This package only have aim to restore internal DAC capatibility, no other else and not have any means to insult anyone that work with mido since this is only for my personal use. (Anyone can use it, but DWYOR)
 
 What's lib that get replaced :
 - /system/lib/libaudioclient.so

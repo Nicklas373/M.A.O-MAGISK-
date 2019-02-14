@@ -9,7 +9,24 @@
 - So Mido shouldn't have any problem with that feature, right?
 : If you're on stock ROM (MIUI) then you'll be fine, cause DAC in that ROM is perfectly working, but if you're on custom ROM, specially for oreo or higher then i'm not sure. Since so much change on audio CAF or blobs source for following stream to always up to date, then some features like this can't be accessed.
 
-- How can i know if my DAC is working or not in Oreo or Pie ROMs?
-: You can use application on playstore that can have access to your DAC directly without any preset or effects, so far i only tested on Neutron Music Player and UAPP.
+- What's exist problem that mido have on pie for accessing internal DAC?
+: Honestly i'm not pretty sure what is causing this issue, but from my research is point to 2 problem, if not device tree then it should be from audio source that used as compilation on ROM. Because i already try to replace some vendor blobs file but still not work, and with only this libs, internal DAC can be accessed, so i think this not come from blobs but from device tree or audio source.
 
-Documentation will continue later,,,, 
+- Why DIRAC Audio Effects is removed?
+: Dirac Audio Effects should and must be removed cause that can downsample bitdepth to 16 bit whenever device request to 24 bit or higher, so when user want try to access hi-res frequency like 24bit / 96Khz or higher, DIRAC will chains to audio route and convert bitdepth to 16 bit after get processing to 24bit or higher by DIRECT/DIRECT_PCM audio policy.
+
+- What's different from DIRAC Audio Effects and Internal DAC?
+: Dirac Audio is like other audio engine that work with some preset and play with gain limiter, it's almost same like viper audio, sony VPT engine, Dolby DTS or any other audio engine and that mean your audio output will have different flavour, depends on what you choose for the preset with limitation of 16bit 48Khz at higher, it can't be higher than that.
+
+Internal DAC, is accessing to your soundcard directly to get priority access to use higher device frequency and bit as device capatibility (in this case 24bit / 192Khz (although i can push it to 32bit / 192Khz :p)) with permissions from audio policy in some application like Neutron music player, USB Audio Player (UAPP) and PowerAMP Music Player.
+
+But on this new pie, audio policy seems get a problem because mido can't route to other section except [DEEP_BUFFER] That have limitation to only can sampling audio to 16 bit / 48Khz, although i already try to change it manually using neutron music player, for accessing hi-res frequency atleast mido should can use [DIRECT] or [DIRECT_PCM] flags to use hi-res audio.
+
+Although this problem not exist with poweramp audio player, but PAMP itself use theirself engine call DVC (Direct Volume Control) that i'm still not really sure this is only bumped audio or any preset working to get hi-res working on pie.
+
+But this problem is exist whenever i use Neutron Music Player or UAPP, this patch is fix that issue and replace as bare minimal libs that can replace to restore functionality without any massive change to your system.
+
+- Why you really want to fix this issue? although already available as secondary option?
+: For myself, i already addicted to hear hi-res audio since i've this phone with supported headset and audio file, i already search and know about audio basic and codecs inside it. So i'm prefer a pure audio sampling without any effects for AudioPhile Experience :p.
+
+Because that i create this build ....
