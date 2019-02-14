@@ -3,11 +3,11 @@
 This is result for internal DAC Access for mido that using neutron music player as audio player
 with patched ROM libs file.
 
-- [Audio not standby after patch](https://github.com/Nicklas373/Internal_DAC_Fixer/blob/master/docs/pacthed/audio_not_standby_before_patch.log)
+- [Audio not standby after patch](https://github.com/Nicklas373/Internal_DAC_Fixer/blob/master/docs/pacthed/audio_not_standby_after_patch.log)
 
 This shown like normal audio flinger log, but with 1 skipped elements
 
-- [Audio standby after patch](https://github.com/Nicklas373/Internal_DAC_Fixer/blob/master/docs/pacthed/audio_standby_before_patch.log)
+- [Audio standby after patch](https://github.com/Nicklas373/Internal_DAC_Fixer/blob/master/docs/pacthed/audio_standby_after_patch.log)
 
 This shown almost same like top of explanation, with no any DIRAC Audio Effect chains, cause i already remove all dirac from system, and it encode perfectly to 96khz with PCM_24BIT_PACKED without any conversion.
 
