@@ -31,6 +31,8 @@ backup(){
 	cp /system/lib64/libaudiopolicyservice.so /sdcard/backup/lib64/libaudiopolicyservice.so
 	cp /system/lib64/libaudioroute.so /sdcard/backup/lib64/libaudioroute.so 
 	cp /vendor/etc/audio_effects.xml /sdcard/backup/vendor/etc/audio_effects.xml
+	cp /vendor/etc/audio_output_policy.conf /sdcard/backup/vendor/etc/audio_output_policy.conf
+	cp /vendor/etc/audio/audio_policy.conf /sdcard/backup/vendor/etc/audio/audio_policy.conf
 }
 
 #Remove DIRAC Audio Effetcs From System
