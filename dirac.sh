@@ -58,27 +58,7 @@ else
 fi
 
 #Remove DIRAC Audio Effetcs From System
-#XenonHD ROM not integrate DIRAC, so not remove it
-if [ "`grep ro.product.name=xenonhd_mido /system/build.prop`" ];
-then
-	echo "Do not remove dirac from xenonhd"
-else
 	rm /system/lib/soundfx/libdirac.so
 	rm /system/lib/libDiracAPI_SHARED.so
 	rm /system/vendor/etc/diracmobile.config
 	sed -i '/persist.audio.dirac.speaker=true/d' /vendor/build.prop
-fi
-
-#Copy modified audio_effects.xml for syberia os only 
-#Syberia have updated this config but other ROMs not, so copy only for preconfigured syberia only
-#Will check other ROM later.
-if [ "`grep ro.product.name=syberia_mido /system/build.prop`" ];
-then 
-    rm /system/vendor/etc/audio_effects.xml
-	mv /system/vendor/etc/syberia_audio_effects.xml /system/vendor/etc/audio_effects.xml
-	chmod 0644 /system/vendor/etc/audio_effects.xml
-else
-	rm /system/vendor/etc/audio_effects.xml
-	mv /system/vendor/etc/default_audio_effects.xml /system/vendor/etc/audio_effects.xml
-	chmod 0644 /system/vendor/etc/audio_effects.xml
-fi
