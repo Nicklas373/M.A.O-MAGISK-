@@ -7,7 +7,7 @@ This package will restore all lib,libs64 and audio_effects.xml to vendor/etc to 
 This package only have aim to restore internal DAC capatibility, no other else and not have any means to insult anyone that work with mido since this is only for my personal use. (Anyone can use it, but DWYOR)
 
 # Project Status
-![Build](https://img.shields.io/badge/Build%20Status-Updated-green.svg) ![Version](https://img.shields.io/badge/Latest%20Version-0.3-blue.svg) ![Library](https://img.shields.io/badge/Library%20Base-LiquidRemix%2020181220%20-blue.svg)
+![Build](https://img.shields.io/badge/Build%20Status-Updated-green.svg) ![Version](https://img.shields.io/badge/Latest%20Version-0.4-blue.svg) ![Library](https://img.shields.io/badge/Library%20Base-LiquidRemix%2020181220%20-blue.svg)
 
 What's lib that get replaced :
 - /system/lib/libaudioclient.so
