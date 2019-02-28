@@ -2,12 +2,14 @@
 
 This is a flashable zip that containt several libs to restore capatibility of accessing to internal DAC (DIRECT/DIRECT_PCM) from audio policy on Mido devices after getting updates to latest Pie versions.
 
-This package will restore all lib,libs64 and audio_effects.xml to vendor/etc to your system and remove all DIRAC Audio Effects from over the system.
+This package will restore all lib,libs64 and audio_effects.xml to vendor/etc to your system and remove all DIRAC Audio Effects from over the system (except for xenonhd ROM).
 
-This package only have aim to restore internal DAC capatibility, no other else and not have any means to insult anyone that work with mido since this is only for my personal use. (Anyone can use it, but DWYOR)
+NOTE: If any other ROM still not implemented DIRAC on settings, then it should get back DIRAC audio effects on system, i'll try to search if possible, or then someone can pm me if they need this.
+
+This package only have aim to restore internal DAC capatibility as bare minimum lib without any harsh modification, no other else and not have any means to insult anyone that work with mido since this is only for my personal use. (Anyone can use it, but DWYOR)
 
 # Project Status
-![Build](https://img.shields.io/badge/Build%20Status-Updated-green.svg) ![Version](https://img.shields.io/badge/Latest%20Version-0.4-blue.svg) ![Library](https://img.shields.io/badge/Library%20Base-LiquidRemix%2020181220%20-blue.svg)
+![Build](https://img.shields.io/badge/Build%20Status-Updated-green.svg) ![Version](https://img.shields.io/badge/Latest%20Version-0.5-blue.svg) ![Library](https://img.shields.io/badge/Library%20Base-LiquidRemix%2020181220%20-blue.svg)
 
 What's lib that get replaced :
 - /system/lib/libaudioclient.so

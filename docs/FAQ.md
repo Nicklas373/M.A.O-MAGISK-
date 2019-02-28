@@ -10,10 +10,14 @@
 : If you're on stock ROM (MIUI) then you'll be fine, cause DAC in that ROM is perfectly working, but if you're on custom ROM, specially for oreo or higher then i'm not sure. Since so much change on audio CAF or blobs source for following stream to always up to date, then some features like this can't be accessed.
 
 - What's exist problem that mido have on pie for accessing internal DAC?
-: Honestly i'm not pretty sure what is causing this issue, but from my research is point to 2 problem, if not device tree then it should be from audio source that used as compilation on ROM. Because i already try to replace some vendor blobs file but still not work, and with only this libs, internal DAC can be accessed, so i think this not come from blobs but from device tree or audio source.
+: Honestly i'm not pretty sure what is causing this issue, but from my research is point to 1 problem, it cause from audio source that used as compilation on ROM. Because i already try to replace some vendor blobs file but still not work, and with only this libs, internal DAC can be accessed, that mean stock libs is came from compilation lib when ROM is under compiling. That files generated from each ROM manifest, so if came from manifest then this should problem on audio source that are using it.
 
 - Why DIRAC Audio Effects is removed?
 : Dirac Audio Effects should and must be removed cause that can downsample bitdepth to 16 bit whenever device request to 24 bit or higher, so when user want try to access hi-res frequency like 24bit / 96Khz or higher, DIRAC will chains to audio route and convert bitdepth to 16 bit after get processing to 24bit or higher by DIRECT/DIRECT_PCM audio policy.
+
+NOTE:
+This problem normally found on ROM that already applied DIRAC audio effects on their settings, if not then DIRAC should not make any problem whenever they implemented on effects.xml only.
+On xenonhd, this problem isn't happen cause DIRAC only work as audio processing (xml) not active audio effects that always work as primary audio encoding/decoding. So DIRAC only give additional sound when it play not disturb a whole system library to downsample bit depth 16bit from whatever bit depth that it set.
 
 - What's different from DIRAC Audio Effects and Internal DAC?
 : Dirac Audio is like other audio engine that work with some preset and play with gain limiter, it's almost same like viper audio, sony VPT engine, Dolby DTS or any other audio engine and that mean your audio output will have different flavour, depends on what you choose for the preset with limitation of 16bit 48Khz at higher, it can't be higher than that.
@@ -27,6 +31,6 @@ Although this problem not exist with poweramp audio player, but PAMP itself use 
 But this problem is exist whenever i use Neutron Music Player or UAPP, this patch is fix that issue and replace as bare minimal libs that can replace to restore functionality without any massive change to your system.
 
 - Why you really want to fix this issue? although already available as secondary option?
-: For myself, i already addicted to hear hi-res audio since i've this phone with supported headset and audio file, i already search and know about audio basic and codecs inside it. So i'm prefer a pure audio sampling without any effects for AudioPhile Experience :p.
+: For myself, i already addicted to hear hi-res audio since i've this phone with supported headset and audio file, i already search and know about audio basic and codecs inside it. So i'm prefer a pure audio sampling without any effects for Audiophile Experience :p.
 
 Because that i create this build ....
