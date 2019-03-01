@@ -47,7 +47,7 @@ ui_print(" ****************** Software ******************* ");
 ui_print(" Custom Package  : Mido Internal DAC Fixer       ");
 ui_print(" Android version : 9.0.x                         ");
 ui_print(" SDK version     : 28                            ");
-ui_print(" Build date      : Sun Feb 28 10:01:20 GMT+7 2019");
+ui_print(" Build date      : Sun Mar 01 09:56:20 GMT+7 2019");
 ui_print(" Build ID        : 0.4.2                         ");
 ui_print(" Developed By    : Nicklas Van Dam @XDA          ");
 ui_print(" *********************************************** ");
