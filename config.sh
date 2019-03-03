@@ -42,11 +42,11 @@ LATESTARTSERVICE=false
 
 print_modname() {
   ui_print "                                 "
-  ui_print "       Mido Camera Fixer         "
-  ui_print "                                 "
-  ui_print "       Portrait, Stable FPS      "
-  ui_print "                                 "
-  ui_print "           Treble Only           "
+  ui_print "*****Mido Internal DAC Fixer*****"
+  ui_print "*                               *"
+  ui_print "*   For XenonHD Pie ROM Only    *"
+  ui_print "*                               *"
+  ui_print "**********************************"
   ui_print "                                 "
 }
 

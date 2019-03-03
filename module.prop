@@ -1,7 +1,7 @@
 id=internaldacfixer
 name=Mido Internal DAC Fixer
-version=0.1
-versionCode=0001
+version=0.5
+versionCode=20190303
 author=Dicky Herlambang
-description=Testing purpose module to fix Integrated DAC module.
+description=A Simple module to fix internal DAC issue on mido in latest pie ROM, this only for XenonHD ROM.
 minMagisk=1700
