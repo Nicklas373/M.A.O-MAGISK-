@@ -1,0 +1,7 @@
+id=internaldacfixer
+name=Mido Internal DAC Fixer
+version=0.1
+versionCode=0001
+author=Dicky Herlambang
+description=Testing purpose module to fix Integrated DAC module.
+minMagisk=1700

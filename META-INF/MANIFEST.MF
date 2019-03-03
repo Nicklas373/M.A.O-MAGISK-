@@ -1,0 +1,270 @@
+Manifest-Version: 1.0
+Created-By: 1.0 (Android SignApk)
+
+Name: META-INF/com/google/android/updater-script
+SHA1-Digest: Lzl1y1cC6TvXytLj6okU81/P8AA=
+
+Name: vendor/lib/libchromatix_s5k5e8_ofilm_snapshot.so
+SHA1-Digest: k6IU4x9qWS6jYdgX+FAMRdh737M=
+
+Name: system/vendor/lib/libchromatix_s5k3l8_qtech_snapshot.so
+SHA1-Digest: k6IU4x9qWS6jYdgX+FAMRdh737M=
+
+Name: system/vendor/lib/libchromatix_s5k5e8_ofilm_hfr_120_3a.so
+SHA1-Digest: 6iSX2bl/MwJinq5uLLKfM4U1W+A=
+
+Name: vendor/lib/libchromatix_s5k3l8_ofilm_hfr_60_dw9763.so
+SHA1-Digest: r7fyEbUHpO+S3tr7yhvE2TDrV9I=
+
+Name: .gitattributes
+SHA1-Digest: SKw0WMKyWo1XoYj5+4x7uSKnPSU=
+
+Name: vendor/lib/libchromatix_ov13855_qtech_zsl_video_dw9763.so
+SHA1-Digest: awtO3jV/svnaKpgQQfjmts8lFSM=
+
+Name: vendor/lib/libchromatix_s5k3l8_ofilm_hfr_90_dw9763.so
+SHA1-Digest: Ev8JwTEo85R0j3JTD4XYtB8eSbE=
+
+Name: system/vendor/lib/libchromatix_s5k3l8_ofilm_hfr_90_dw9763.so
+SHA1-Digest: Ev8JwTEo85R0j3JTD4XYtB8eSbE=
+
+Name: vendor/lib/libchromatix_ov13855_qtech_zsl_preview_dw9763.so
+SHA1-Digest: GhvuwkPeyptKfZFllfQKB8/o6l8=
+
+Name: vendor/lib/libchromatix_s5k3l8_ofilm_zsl_preview_dw9763.so
+SHA1-Digest: hv57xf/0OSDdZ/KbKYywkhVZX18=
+
+Name: vendor/lib/libmmcamera_s5k3l8_ofilm.so
+SHA1-Digest: IaWLUrHBaFlg+V1fYeXyy3TyhJQ=
+
+Name: system/vendor/lib/libchromatix_s5k3l8_ofilm_default_video_dw9763
+ .so
+SHA1-Digest: Jy+k5qf3sy3dopo/vDpq3ZUQ/a4=
+
+Name: system/vendor/lib/libmmcamera_s5k3l8_qtech.so
+SHA1-Digest: Q19RYpqMQYo3c81wM7T0eJZfkKQ=
+
+Name: config.sh
+SHA1-Digest: KW1+LpbGhO7+5xChprVf1zUpzEE=
+
+Name: system/vendor/lib/libchromatix_s5k3l8_qtech_hfr_120_dw9763.so
+SHA1-Digest: eHewLAQo6sVxhUfLl/H2UifUjmM=
+
+Name: vendor/lib/libmmcamera_s5k3l8_qtech.so
+SHA1-Digest: Q19RYpqMQYo3c81wM7T0eJZfkKQ=
+
+Name: vendor/lib/libchromatix_imx258_ofilm_zsl_preview_dw9763.so
+SHA1-Digest: XaWF/Gw4I8/KU1PUehQTJ3LGb6E=
+
+Name: common/post-fs-data.sh
+SHA1-Digest: W9c/DllxnfxrlloMGo5ef2mC+dc=
+
+Name: system/vendor/lib/libchromatix_s5k5e8_qtech_zsl_video_3a.so
+SHA1-Digest: Ntoq6pzdM0kJ5r65Xg42kCUflfc=
+
+Name: system/vendor/lib/libchromatix_imx258_ofilm_snapshot.so
+SHA1-Digest: k6IU4x9qWS6jYdgX+FAMRdh737M=
+
+Name: system/vendor/lib/libchromatix_s5k5e8_ofilm_zsl_video_3a.so
+SHA1-Digest: +k2hDb1XkSVJbOE9n79LfON4j1k=
+
+Name: system/vendor/lib/libchromatix_s5k5e8_qtech_hfr_60_3a.so
+SHA1-Digest: +mv2KmY8AnK3aFkyCKPpjqzIyjA=
+
+Name: system/vendor/lib/libchromatix_s5k5e8_ofilm_zsl_preview_3a.so
+SHA1-Digest: 36eTQUf4jgBQuPiLn+mWC/RZiK4=
+
+Name: system/vendor/lib/libchromatix_s5k3l8_ofilm_hfr_60_dw9763.so
+SHA1-Digest: r7fyEbUHpO+S3tr7yhvE2TDrV9I=
+
+Name: system/vendor/lib/libmmcamera_s5k3l8_ofilm.so
+SHA1-Digest: IaWLUrHBaFlg+V1fYeXyy3TyhJQ=
+
+Name: system/etc/device_features/mido.xml
+SHA1-Digest: PFZIhTOrTB1Zp1Rsng2d0y6QEFI=
+
+Name: META-INF/com/google/android/update-binary
+SHA1-Digest: A5P37sgXNjJEX8nTyDPsmzO12X8=
+
+Name: system/vendor/lib/libchromatix_s5k5e8_ofilm_snapshot.so
+SHA1-Digest: k6IU4x9qWS6jYdgX+FAMRdh737M=
+
+Name: vendor/lib/libchromatix_imx258_ofilm_hfr_120_dw9763.so
+SHA1-Digest: GG/dLDIVo2jLVodW/R2RcueRQV0=
+
+Name: vendor/lib/libchromatix_ov13855_qtech_hfr_90_dw9763.so
+SHA1-Digest: YH4mKK20dT0DjOpLgnx2V5DsKoQ=
+
+Name: vendor/lib/libchromatix_s5k3l8_qtech_hfr_90_dw9763.so
+SHA1-Digest: u3QwE2YeSpt4u8hbq7JddZkXD9I=
+
+Name: vendor/lib/libchromatix_s5k5e8_ofilm_hfr_60_3a.so
+SHA1-Digest: EdnSiVHXvy+A60vyifCDQfbr/TA=
+
+Name: vendor/lib/libchromatix_s5k3l8_ofilm_snapshot.so
+SHA1-Digest: AglCiynwJ9naI4urzp+MG+JJImo=
+
+Name: system/vendor/lib/libchromatix_imx258_ofilm_zsl_video_dw9763.so
+SHA1-Digest: Ftxfx2LQnzP056B+UVvbWI/RG5k=
+
+Name: README.md
+SHA1-Digest: cP3vVQyNR+cymBsXTWpJqpMmM5Y=
+
+Name: module.prop
+SHA1-Digest: woC9yAOhwmOAqzLCEVJj7crR1Vk=
+
+Name: vendor/lib/libchromatix_imx258_ofilm_snapshot.so
+SHA1-Digest: k6IU4x9qWS6jYdgX+FAMRdh737M=
+
+Name: system/vendor/lib/libchromatix_imx258_ofilm_4k_video_dw9763.so
+SHA1-Digest: 2kFhnvi2nfHbE4SmltcXZGTelY4=
+
+Name: system/vendor/lib/libmmcamera_ov13855_qtech.so
+SHA1-Digest: FCl5a5akAdtDyZfTb495LHXaIlM=
+
+Name: system/vendor/lib/libmmcamera_s5k5e8_ofilm.so
+SHA1-Digest: AvoPpOiKMovXRG6IVZpadidTicM=
+
+Name: system/vendor/lib/libchromatix_imx258_ofilm_zsl_preview_dw9763.s
+ o
+SHA1-Digest: XaWF/Gw4I8/KU1PUehQTJ3LGb6E=
+
+Name: system/vendor/lib/libchromatix_ov13855_qtech_default_video_dw976
+ 3.so
+SHA1-Digest: GvZIktsEBJjnuZCl6lq06ClPj9o=
+
+Name: vendor/lib/libchromatix_s5k5e8_ofilm_zsl_preview_3a.so
+SHA1-Digest: 36eTQUf4jgBQuPiLn+mWC/RZiK4=
+
+Name: system/etc/media_profiles.xml
+SHA1-Digest: XhqvPJQbGHpjpXiVfq1c3hk2Wn8=
+
+Name: system/vendor/lib/libchromatix_imx258_ofilm_hfr_90_dw9763.so
+SHA1-Digest: S0Ju947U7Ds/3nTMc647AArz074=
+
+Name: system/vendor/etc/camera/s5k3l8_ofilm_chromatix.xml
+SHA1-Digest: IpC/okS9skY+rDYam72WoCM4w08=
+
+Name: vendor/lib/libchromatix_imx258_ofilm_hfr_90_dw9763.so
+SHA1-Digest: S0Ju947U7Ds/3nTMc647AArz074=
+
+Name: system/vendor/lib/libchromatix_s5k5e8_ofilm_hfr_60_3a.so
+SHA1-Digest: EdnSiVHXvy+A60vyifCDQfbr/TA=
+
+Name: system/vendor/lib/libmmcamera_imx258_ofilm.so
+SHA1-Digest: oKZfGrxMOVvbsqq218jS3YgeC24=
+
+Name: vendor/lib/libchromatix_ov13855_qtech_snapshot.so
+SHA1-Digest: k6IU4x9qWS6jYdgX+FAMRdh737M=
+
+Name: system/vendor/lib/libchromatix_imx258_ofilm_hfr_120_dw9763.so
+SHA1-Digest: GG/dLDIVo2jLVodW/R2RcueRQV0=
+
+Name: system/vendor/lib/libchromatix_ov13855_qtech_hfr_90_dw9763.so
+SHA1-Digest: YH4mKK20dT0DjOpLgnx2V5DsKoQ=
+
+Name: system/vendor/lib/libchromatix_ov13855_qtech_zsl_preview_dw9763.
+ so
+SHA1-Digest: GhvuwkPeyptKfZFllfQKB8/o6l8=
+
+Name: system/vendor/lib/libchromatix_imx258_ofilm_hfr_60_dw9763.so
+SHA1-Digest: Y/WiFRvE3Ik0OwCHV43DIsEDRCo=
+
+Name: system/vendor/lib/libchromatix_ov13855_qtech_hfr_120_dw9763.so
+SHA1-Digest: Wuaw//tHUIBseQouvjpg/cjm7v8=
+
+Name: common/service.sh
+SHA1-Digest: hCOn0sjc2mEMqqqcb7TFt4BEcVM=
+
+Name: system/vendor/lib/libchromatix_s5k3l8_ofilm_hfr_120_dw9763.so
+SHA1-Digest: KhidYZmy61E+rzC9r698isE0LQg=
+
+Name: system/vendor/lib/libchromatix_s5k5l8_ofilm_snapshot.so
+SHA1-Digest: k6IU4x9qWS6jYdgX+FAMRdh737M=
+
+Name: system/vendor/lib/libchromatix_ov13855_qtech_snapshot.so
+SHA1-Digest: k6IU4x9qWS6jYdgX+FAMRdh737M=
+
+Name: system/vendor/lib/libchromatix_s5k3l8_ofilm_zsl_video_dw9763.so
+SHA1-Digest: vkTWgtV8/MdRq1Srs3ZKQHuuJJI=
+
+Name: system/etc/camera/s5k3l8_ofilm_chromatix.xml
+SHA1-Digest: IpC/okS9skY+rDYam72WoCM4w08=
+
+Name: system/vendor/lib/libchromatix_s5k5e8_ofilm_hfr_90_3a.so
+SHA1-Digest: CozxXSj7ERDMiqWF03n9oar5+jU=
+
+Name: vendor/lib/libchromatix_imx258_ofilm_hfr_60_dw9763.so
+SHA1-Digest: Y/WiFRvE3Ik0OwCHV43DIsEDRCo=
+
+Name: system/vendor/lib/libchromatix_imx258_ofilm_default_video_dw9763
+ .so
+SHA1-Digest: ZzvWJFzMeLRzw6pix1f3n0PorYI=
+
+Name: vendor/lib/libchromatix_imx258_ofilm_4k_video_dw9763.so
+SHA1-Digest: 2kFhnvi2nfHbE4SmltcXZGTelY4=
+
+Name: vendor/lib/libchromatix_s5k3l8_ofilm_zsl_video_dw9763.so
+SHA1-Digest: vkTWgtV8/MdRq1Srs3ZKQHuuJJI=
+
+Name: system/vendor/lib/libchromatix_s5k5e8_ofilm_default_video_3a.so
+SHA1-Digest: +58T2oBnR5PW1wm9QRAhz5Mfkjw=
+
+Name: vendor/lib/libmmcamera_imx258_ofilm.so
+SHA1-Digest: oKZfGrxMOVvbsqq218jS3YgeC24=
+
+Name: system/vendor/lib/libchromatix_ov13855_qtech_hfr_60_dw9763.so
+SHA1-Digest: rIt+TdovkwH31cxTVnpzY1+igRk=
+
+Name: vendor/lib/libchromatix_ov13855_qtech_hfr_120_dw9763.so
+SHA1-Digest: Wuaw//tHUIBseQouvjpg/cjm7v8=
+
+Name: vendor/lib/libchromatix_s5k5e8_ofilm_hfr_90_3a.so
+SHA1-Digest: CozxXSj7ERDMiqWF03n9oar5+jU=
+
+Name: system/vendor/lib/libchromatix_s5k3l8_ofilm_zsl_preview_dw9763.s
+ o
+SHA1-Digest: hv57xf/0OSDdZ/KbKYywkhVZX18=
+
+Name: vendor/lib/libchromatix_s5k5e8_ofilm_zsl_video_3a.so
+SHA1-Digest: +k2hDb1XkSVJbOE9n79LfON4j1k=
+
+Name: vendor/lib/libmmcamera_s5k5e8_ofilm.so
+SHA1-Digest: AvoPpOiKMovXRG6IVZpadidTicM=
+
+Name: system/vendor/lib/libchromatix_s5k5e8_qtech_default_video_3a.so
+SHA1-Digest: 0xB5+yGByhLpEWd5cLsKF7JN/Z0=
+
+Name: common/system.prop
+SHA1-Digest: 7TnZoxe4jX3vocrbr/oRcPziZMQ=
+
+Name: vendor/lib/libchromatix_imx258_ofilm_zsl_video_dw9763.so
+SHA1-Digest: Ftxfx2LQnzP056B+UVvbWI/RG5k=
+
+Name: vendor/lib/libchromatix_s5k3l8_qtech_snapshot.so
+SHA1-Digest: k6IU4x9qWS6jYdgX+FAMRdh737M=
+
+Name: vendor/lib/libchromatix_s5k3l8_ofilm_hfr_120_dw9763.so
+SHA1-Digest: KhidYZmy61E+rzC9r698isE0LQg=
+
+Name: vendor/lib/libchromatix_s5k3l8_qtech_hfr_120_dw9763.so
+SHA1-Digest: eHewLAQo6sVxhUfLl/H2UifUjmM=
+
+Name: vendor/etc/media_profiles_V1_0.xml
+SHA1-Digest: XhqvPJQbGHpjpXiVfq1c3hk2Wn8=
+
+Name: system/vendor/lib/libchromatix_s5k3l8_ofilm_snapshot.so
+SHA1-Digest: AglCiynwJ9naI4urzp+MG+JJImo=
+
+Name: system/vendor/lib/libchromatix_s5k3l8_qtech_hfr_90_dw9763.so
+SHA1-Digest: u3QwE2YeSpt4u8hbq7JddZkXD9I=
+
+Name: system/vendor/lib/libchromatix_ov13855_qtech_zsl_video_dw9763.so
+SHA1-Digest: awtO3jV/svnaKpgQQfjmts8lFSM=
+
+Name: vendor/lib/libmmcamera_ov13855_qtech.so
+SHA1-Digest: FCl5a5akAdtDyZfTb495LHXaIlM=
+
+Name: vendor/lib/libchromatix_ov13855_qtech_hfr_60_dw9763.so
+SHA1-Digest: rIt+TdovkwH31cxTVnpzY1+igRk=
+
