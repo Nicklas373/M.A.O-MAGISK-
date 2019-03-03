@@ -26,7 +26,7 @@
 AUTOMOUNT=true
 
 # Set to true if you need to load system.prop
-PROPFILE=false
+PROPFILE=true
 
 # Set to true if you need post-fs-data script
 POSTFSDATA=false
@@ -46,7 +46,7 @@ print_modname() {
   ui_print "*                               *"
   ui_print "*   For XenonHD Pie ROM Only    *"
   ui_print "*                               *"
-  ui_print "**********************************"
+  ui_print "*********************************"
   ui_print "                                 "
 }
 
