@@ -110,7 +110,7 @@ rm -rf $MODPATH 2>/dev/null
 mkdir -p $MODPATH
 
 # Extract files to system. Use your own method if needed
-ui_print "- Extracting magic files to systemlessly replace them"
+ui_print "- Extracting module files"
 unzip -o "$ZIP" 'system/*' -d $MODPATH >&2
 
 # Remove placeholder
