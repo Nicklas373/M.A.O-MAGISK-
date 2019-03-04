@@ -9,7 +9,7 @@ NOTE: This module only for xenon hd pie ROMs, or other pie ROMs that still not i
 This package only have aim to restore internal DAC capatibility as bare minimum lib without any harsh modification, no other else and not have any means to insult anyone that work with mido since this is only for my personal use. (Anyone can use it, but DWYOR)
 
 # Project Status
-![Build](https://img.shields.io/badge/Build%20Status-Updated-green.svg) ![Version](https://img.shields.io/badge/Latest%20Version-0.6-blue.svg) ![Library](https://img.shields.io/badge/Library%20Base-LiquidRemix%2020181220%20-blue.svg)
+![Build](https://img.shields.io/badge/Build%20Status-Updated-green.svg) ![Version](https://img.shields.io/badge/Latest%20Version-0.7-blue.svg) ![Library](https://img.shields.io/badge/Library%20Base-LiquidRemix%2020181220%20-blue.svg)
 ![Package](https://img.shields.io/badge/Package-Magisk-blue.svg)
 
 What's lib that get replaced :
@@ -24,13 +24,12 @@ What's lib that get replaced :
 - /system/lib/libsoundpool.so
 - /system/lib/libsoundtrigger.so
 - /system/lib/libsoundtriggerservice.so
-- /system/lib64/libaudioclient.so
-- /system/lib64/libaudiopolicyenginedefault.so
-- /system/lib64/libaudiopolicymanager.so
-- /system/lib64/libaudiopolicymanagerdefault.so
-- /system/lib64/libaudiopolicyservice.so
-- /system/lib64/libaudioroute.so
 - /vendor/etc/audio_effects.xml
+- /vendor/etc/audio_output_policy.conf
+- /vendor/etc/audio_platform_info.xml
+- /vendor/etc/audio_policy.conf
+- /vendor/etc/audio_policy_configuration.xml
+- /vendor/etc/mixer_paths_mtp.xml
 
 Compatibitily ROM of this patch (This for magisk module):
 - XenonHD Experimental Build
