@@ -31,9 +31,10 @@ else
 	sed -i '/persist.audio.dirac.speaker=true/d' /vendor/build.prop
 fi
 	
-#Copy modified audio_effects.xml for syberia os only 
-#Syberia have updated this config but other ROMs not, so copy only for preconfigured syberia only
+#Copy modified audio_effects.xml for syberia os only.
+#Syberia have updated this config but other ROMs not, so copy only for preconfigured syberia only.
 #Will check other ROM later.
+#Copy Modified audio config from syberia os, but not copy same config to syberia rom.
 if [ "`grep ro.product.name=syberia_mido /system/build.prop`" ];
 then 
     rm /system/vendor/etc/audio_effects.xml
@@ -47,9 +48,29 @@ then
 	cp /system/vendor/etc/xenon_audio_effects.xml /system/vendor/etc/audio_effects.xml
 	chmod 0644 /system/vendor/etc/audio_effects.xml
 	rm /system/vendor/etc/default_audio_effects.xml
+	cp /temp/propietary/vendor/etc/audio_output_policy.conf /system/vendor/etc/audio_output_policy.conf
+	cp /temp/propietary/vendor/etc/audio_platform_info.xml /system/vendor/etc/audio_platform_info.xml
+	cp /temp/propietary/vendor/etc/audio_policy.conf /system/vendor/etc/audio_policy.conf
+	cp /temp/propietary/vendor/etc/audio_policy_configuration.xml /system/vendor/etc/audio_policy_configuration.xml
+	cp /temp/propietary/vendor/etc/mixer_paths_mtp.xml /system/vendor/etc/mixer_paths_mtp.xml
+	chmod 0644 /system/vendor/etc/audio_output_policy.conf
+	chmod 0644 /system/vendor/etc/audio_platform_info.xml
+	chmod 0644 /system/vendor/etc/audio_policy.conf
+	chmod 0644 /system/vendor/etc/audio_policy_configuration.xml
+	chmod 0644 /system/vendor/etc/mixer_paths_mtp.xml
 else
 	rm /system/vendor/etc/audio_effects.xml
 	cp /system/vendor/etc/default_audio_effects.xml /system/vendor/etc/audio_effects.xml
 	chmod 0644 /system/vendor/etc/audio_effects.xml
 	rm /system/vendor/etc/default_audio_effects.xml
+	cp /temp/propietary/vendor/etc/audio_output_policy.conf /system/vendor/etc/audio_output_policy.conf
+	cp /temp/propietary/vendor/etc/audio_platform_info.xml /system/vendor/etc/audio_platform_info.xml
+	cp /temp/propietary/vendor/etc/audio_policy.conf /system/vendor/etc/audio_policy.conf
+	cp /temp/propietary/vendor/etc/audio_policy_configuration.xml /system/vendor/etc/audio_policy_configuration.xml
+	cp /temp/propietary/vendor/etc/mixer_paths_mtp.xml /system/vendor/etc/mixer_paths_mtp.xml
+	chmod 0644 /system/vendor/etc/audio_output_policy.conf
+	chmod 0644 /system/vendor/etc/audio_platform_info.xml
+	chmod 0644 /system/vendor/etc/audio_policy.conf
+	chmod 0644 /system/vendor/etc/audio_policy_configuration.xml
+	chmod 0644 /system/vendor/etc/mixer_paths_mtp.xml
 fi
