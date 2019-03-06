@@ -25,10 +25,7 @@ What's lib that get replaced :
 - /system/lib/libsoundtrigger.so
 - /system/lib/libsoundtriggerservice.so
 - /vendor/etc/audio_effects.xml
-- /vendor/etc/audio_output_policy.conf
 - /vendor/etc/audio_platform_info.xml
-- /vendor/etc/audio_policy.conf
-- /vendor/etc/audio_policy_configuration.xml
 - /vendor/etc/mixer_paths_mtp.xml
 
 Compatibitily ROM of this patch (This for magisk module):
