@@ -4,7 +4,7 @@ This is a magisk module that containt several libs to restore capatibility of ac
 
 This package will restore all lib,libs64 and audio_effects.xml to vendor/etc to your system and install updated audio caf pre-built effects to your system.
 
-NOTE: This module only for xenon hd pie ROMs, or other pie ROMs that still not included DIRAC in their settings option, if anyone want to use global version then check [Master](https://github.com/Nicklas373/Internal_DAC_Fixer/tree/master) branch.
+NOTE: This module created for almost all pie ROMs for mido that integrated DIRAC audio effects on system, if not then take a look on [XenonHD Branch](https://github.com/Nicklas373/Internal_DAC_Fixer/tree/Magisk-XenonHD) and if anyone want to use global version then check [Master](https://github.com/Nicklas373/Internal_DAC_Fixer/tree/master) branch.
 
 This package only have aim to restore internal DAC capatibility as bare minimum lib without any harsh modification, no other else and not have any means to insult anyone that work with mido since this is only for my personal use. (Anyone can use it, but DWYOR)
 
