@@ -2,7 +2,7 @@ NAME ?= MIDF
 
 DATE := $(shell date "+%Y%m%d-%H%M")
 
-CODE := MAGISK-XENONHD
+CODE := DIRAC-ON
 
 VER := v0.7.2
 
