@@ -4,7 +4,7 @@ DATE := $(shell date "+%Y%m%d-%H%M")
 
 CODE := MAGISK-XENONHD
 
-VER := v0.7.1
+VER := v0.7.2
 
 ZIP := $(NAME)-$(CODE)-$(VER)-$(DATE).zip
 
