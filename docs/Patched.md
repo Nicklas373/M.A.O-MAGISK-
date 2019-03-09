@@ -10,8 +10,7 @@ This shown like normal audio flinger log, but with 1 skipped elements
 - [Audio standby after patch](https://github.com/Nicklas373/Internal_DAC_Fixer/blob/master/docs/patched/audio_standby_after_patch.log)
 
 This shown almost same like top of explanation..
-- If ROM with DIRAC audio effects is implemented on settings then no any DIRAC Audio Effect chains, cause i already remove all dirac from system, and it encode perfectly to 96khz with PCM_24BIT_PACKED without any conversion.
-- If ROM without DIRAC audio effects like xenonhd then DIRAC still works as that log tell but not happen any conversion cause DIRAC isn't active on default audio processing. Only as audio effects when enable in audiofx or etc.
+- If ROM with DIRAC audio effects that already implemented on settings, should not make any problem in this case. Since DIRAC only chains effects but state is on inactive when dump on audio flinger "state 000" is refer to inactive, thanks to neutron music player developer for this explanation.
 
 - [Screen Neutron Unpatched 96KHz after patch #1](https://github.com/Nicklas373/Internal_DAC_Fixer/blob/master/docs/patched/Screenshot_20190214-093915.png)
 it shows like normally neutron that tell you're play with hi-res audio quality
