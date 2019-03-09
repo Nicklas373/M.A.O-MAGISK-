@@ -2,4 +2,4 @@
 # Example: Change dpi
 # ro.sf.lcd_density=320
 # Disable DIRAC Speaker
-persist.dirac.speaker=false
+persist.audio.dirac.speaker=false
