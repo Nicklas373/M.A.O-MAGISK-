@@ -2,7 +2,7 @@ NAME ?= MIDF
 
 DATE := $(shell date "+%Y%m%d-%H%M")
 
-VER := v0.7.5
+VER := v0.7.5-B
 
 ZIP := $(NAME)-$(VER)-$(DATE).zip
 
