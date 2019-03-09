@@ -3,11 +3,11 @@
 This is result for internal DAC Access for mido that using neutron music player as audio player
 with unpatched ROM libs file.
 
-- [Audio not standby before patch](https://github.com/Nicklas373/Internal_DAC_Fixer/blob/master/docs/unpacthed/audio_not_standby_before_patch.log)
+- [Audio not standby before patch](https://github.com/Nicklas373/Internal_DAC_Fixer/blob/master/docs/unpatched/audio_not_standby_before_patch.log)
 
 This shown like normal audio flinger log, but with 2 skipped elements
 
-- [Audio standby before patch](https://github.com/Nicklas373/Internal_DAC_Fixer/blob/master/docs/unpacthed/audio_standby_before_patch.log)
+- [Audio standby before patch](https://github.com/Nicklas373/Internal_DAC_Fixer/blob/master/docs/unpatched/audio_standby_before_patch.log)
 
 This shown almost same like top of explanation, with DIRAC Audio effects chains and sampling 48Khz, 16 bit with [DEEP_BUFFER] audio policy, NOTE: i already try to push this neutron music player to accessing hi-res output with all flags change, but that not working correctly.
 
