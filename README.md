@@ -4,7 +4,7 @@ This is a flashable zip that containt several libs to restore capatibility of ac
 
 This package will restore all lib,libs64 and updated audio config to your system and install updated audio caf pre-built effects to your system.
 
-NOTE: This package was created for almost all pie ROMs for Mido and if anyone want to use magisk version then check [Master Branch](https://github.com/Nicklas373/Internal_DAC_Fixer/tree/Magisk).
+NOTE: This package was created for almost all pie ROMs for Mido and if anyone want to use magisk version then check [Magisk Branch](https://github.com/Nicklas373/Internal_DAC_Fixer/tree/Magisk).
 
 This package only have aim to restore internal DAC capatibility include with several libs to optimize audio experience without any harsh modification and not have any means to insult anyone that work with Mido since this is only for my personal use. (Anyone can use it, but DWYOR)
 
