@@ -4,11 +4,13 @@ DATE := $(shell date "+%Y%m%d-%H%M")
 
 VER := v0.7.5-B
 
-ZIP := $(NAME)-$(VER)-$(DATE).zip
+CODE := MAGISK
 
-ZIP_SIGN := $(NAME)-$(VER)-$(DATE)-signed.zip
+ZIP := $(NAME)-$(CODE)-$(VER)-$(DATE).zip
 
-ZIP_SHA := $(NAME)-$(VER)-$(DATE).zip.sha1
+ZIP_SIGN := $(NAME)-$(CODE)-$(VER)-$(DATE)-signed.zip
+
+ZIP_SHA := $(NAME)-$(CODE)-$(VER)-$(DATE).zip.sha1
 
 EXCLUDE := Makefile *.git* *.jar* *placeholder* *.md* *.pem* *.pk8* *.jar* *.sha1*
 
