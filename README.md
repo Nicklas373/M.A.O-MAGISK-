@@ -40,6 +40,7 @@ Compatibitily ROM of this patch (This for already tested):
 - XenonHD Experimental Build
 - Syberia OS Official Build
 - Pixel Experience CAF Official Build (should work for AOSP build too)
+- LineageOS 16 Unofficial Build
 
 Other Information Catalog:
 - [FAQ](https://github.com/Nicklas373/Internal_DAC_Fixer/blob/master/docs/FAQ.md)

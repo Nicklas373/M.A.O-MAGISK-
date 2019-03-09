@@ -2,15 +2,13 @@ NAME ?= MIDF
 
 DATE := $(shell date "+%Y%m%d-%H%M")
 
-CODE := DIRAC-ON
+VER := v0.7.3
 
-VER := v0.7.2
+ZIP := $(NAME)-$(VER)-$(DATE).zip
 
-ZIP := $(NAME)-$(CODE)-$(VER)-$(DATE).zip
+ZIP_SIGN := $(NAME)-$(VER)-$(DATE)-signed.zip
 
-ZIP_SIGN := $(NAME)-$(CODE)-$(VER)-$(DATE)-signed.zip
-
-ZIP_SHA := $(NAME)-$(CODE)-$(VER)-$(DATE).zip.sha1
+ZIP_SHA := $(NAME)-$(VER)-$(DATE).zip.sha1
 
 EXCLUDE := Makefile *.git* *.jar* *placeholder* *.md* *.pem* *.pk8* *.jar* *.sha1*
 
@@ -29,4 +27,4 @@ $(ZIP):
 	@rm $(ZIP)
 	@mv $(ZIP_SIGN) /home/hana/$(ZIP_SIGN)
 	@mv $(ZIP_SHA) /home/hana/$(ZIP_SHA)
-
+	
