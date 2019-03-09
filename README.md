@@ -36,7 +36,7 @@ Additional library :
 - /vendor/etc/diracmobile.config
 - /vendor/etc/mixer_paths_mtp.xml
 
-Compatibitily ROM of this patch (This for already tested):
+Compatibitily ROM of this patch (this for already tested):
 - XenonHD Experimental Build
 - Syberia OS Official Build
 - Pixel Experience CAF Official Build (should work for AOSP build too)
