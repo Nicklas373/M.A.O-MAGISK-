@@ -1,4 +1,4 @@
-# Mido Internal DAC Fixer for android 9.0.x (AOSP/LOS/MAGISK)
+# Mido Internal DAC Fixer for Android 9.0.x (AOSP/LOS/MAGISK)
 
 This is a magisk module that containt several libs to restore capatibility of accessing to internal DAC (DIRECT/DIRECT_PCM) from audio policy on Mido devices after getting updates to latest Pie versions.
 
@@ -28,7 +28,10 @@ What's lib that get replaced (Core library) :
 Additional library :
 - /vendor/etc/audio_policy_configuration.xml
 - /vendor/etc/audio_platform_info.xml
+- /vendor/etc/audio_output_policy.conf
+- /vendor/etc/audio_policy.conf
 - /vendor/etc/mixer_paths_mtp.xml
+- /vendor/etc/sound_trigger_mixer_paths.xml
 
 Compatibitily ROM of this patch (this for already tested):
 - XenonHD Experimental Build
