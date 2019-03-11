@@ -5,6 +5,3 @@ MODDIR=${0%/*}
 
 # This script will be executed in post-fs-data mode
 # More info in the main Magisk thread
-resetprop persist.bt.enableAptXHD true
-resetprop persist.service.btui.use_aptx 1
-resetprop persistent.bt.a2dp_offload_cap sbc-aptx-aptXHD-aac
