@@ -25,9 +25,12 @@ What's lib that get replaced (Core library) :
 - /system/lib/libsoundtriggerservice.so
 
 Additional library :
+- /vendor/etc/audio_effects.xml
+- /vendor/etc/audio_policy.conf
 - /vendor/etc/audio_policy_configuration.xml
 - /vendor/etc/audio_platform_info.xml
 - /vendor/etc/mixer_paths_mtp.xml
+- /vendor/etc/sound_trigger_mixer_paths.xml
 
 Compatibitily ROM of this patch (this for already tested):
 - XenonHD Experimental Build
