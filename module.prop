@@ -1,6 +1,6 @@
 id=internaldacfixer
 name=Mido Internal DAC Fixer
-version=0.7.7-A
+version=0.7.7-B
 versionCode=20190325
 author=Dicky Herlambang
 description=A Simple module to fix internal DAC issue on mido in latest Pie ROM.
