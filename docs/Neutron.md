@@ -3,9 +3,10 @@
 I'm using neutron music player for this case, for another music player maybe you can use UAPP but i'm not providing any guide for that because i'm not using it right now.
 
 What item that you'll need (NOTE: THIS CAN BE APPLIED TO OTHER DEVICE, NOT ONLY FOR MIDO) :
-- [Neutron Music Player] (https://play.google.com/store/apps/details?id=com.neutroncode.mp&hl=en)
-- [ADB Debugging Tools] (https://androidfilehost.com/?fid=746010030569952951)
-- Working headset & phone 
+- [Neutron Music Player](https://play.google.com/store/apps/details?id=com.neutroncode.mp&hl=en)
+- [Neutron Music Player EVAL](https://play.google.com/store/apps/details?id=com.neutroncode.mpeval&hl=en)
+- [ADB Debugging Tools](https://androidfilehost.com/?fid=746010030569952951)
+- Supporting headset or headphone 
 
 How to check it :
 - Install neutron music player first
@@ -20,9 +21,13 @@ How to check it :
 	 - Hardware gain (on)
 	 - Audio Focus (on)
 	 - Generic Driver (on) (click generic driver for advanced option)
-	   : - Hi-Res Codec (DIRECT_PCM) (on)
+	   : - Hi-Res Codec (DIRECT_PCM) (off)
 	     - Hi-Res Speaker (on)
-		 - Hi-Res Bluetooth (on)
+	     - Hi-Res Bluetooth (on)
+	     - Custom Format (on)
+		:  - Format (16bit int, 24bit int, 32bit int)
+		   - Frequency (44100,48000.96000,192000)
+		   - Mode (DIRECT)
      - 32-bit Output (IEEE 754) (off)
 	 - Low latency (off)
 	 - Direct USB Access (on)
@@ -38,6 +43,10 @@ How to check it :
   dumpsys media.audio_flinger
   
 - After that search which port that is using it, normally it have output device detected as wired headset with 96Khz sample rate and 24 bit PCM packed for bit depth.
+
+- Watch the HAL buffer size, 
+	* if you play audio with 24bit 96Khz then it should equals to 23040 bytes
+	* if you play audio with 24bit 48Khz then it should equals to 11520 bytes
 
 This is if working hi-res ouput is show :
 

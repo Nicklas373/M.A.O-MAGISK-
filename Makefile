@@ -2,7 +2,7 @@ NAME ?= MIDF
 
 DATE := $(shell date "+%Y%m%d-%H%M")
 
-VER := v0.7.7-B
+VER := v0.7.7-C
 
 CODE := MAGISK
 
@@ -27,6 +27,6 @@ $(ZIP):
 	@echo "Done."	
 	@mv $(HOME)/docs docs
 	@rm $(ZIP)
-	@mv $(ZIP_SIGN) /home/hana/$(ZIP_SIGN)
-	@mv $(ZIP_SHA) /home/hana/$(ZIP_SHA)
+	@mv $(ZIP_SIGN) $(HOME)/$(ZIP_SIGN)
+	@mv $(ZIP_SHA) $(HOME)/$(ZIP_SHA)
 	
