@@ -4,7 +4,7 @@ This is a magisk module that containt several libs to restore capatibility of ac
 
 This package will restore library and updated audio config to your system.
 
-NOTE: This module created for almost all pie ROMs for Mido and if anyone want to use global version then check [Magisk](https://github.com/Nicklas373/Internal_DAC_Fixer/tree/Magisk) branch.
+NOTE: This module created for almost all pie ROMs for Mido and if anyone want to use magisk version then check [Magisk](https://github.com/Nicklas373/Internal_DAC_Fixer/tree/Magisk) branch.
 
 This package only have aim to restore internal DAC capatibility as bare minimum lib without any harsh modification, no other else and not have any means to insult anyone that work with mido since this is only for my personal use. (Anyone can use it, but DWYOR)
 
