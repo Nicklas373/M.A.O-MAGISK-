@@ -10,7 +10,7 @@ This package only have aim to restore internal DAC capatibility as bare minimum 
 
 # Project Status
 ![Build](https://img.shields.io/badge/Build%20Status-Updated-green.svg) ![Version](https://img.shields.io/badge/Latest%20Version-0.7-blue.svg) ![Library](https://img.shields.io/badge/Library%20Base-LiquidRemix%2020181220%20-blue.svg)
-![Package](https://img.shields.io/badge/Package-Magisk-blue.svg)
+![Package](https://img.shields.io/badge/Package-Magisk-blue.svg) ![Magisk Template](https://img.shields.io/badge/Magisk%20Template-v19.0-blue.svg) 
 
 What's lib that get replaced (Core library) :
 - /system/lib/libaudioclient.so
