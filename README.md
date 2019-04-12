@@ -9,7 +9,7 @@ NOTE: This module created for almost all pie ROMs for Mido and if anyone want to
 This package only have aim to restore internal DAC capatibility as bare minimum lib without any harsh modification, no other else and not have any means to insult anyone that work with mido since this is only for my personal use. (Anyone can use it, but DWYOR)
 
 # Project Status
-![Build](https://img.shields.io/badge/Build%20Status-Updated-green.svg) ![Version](https://img.shields.io/badge/Latest%20Version-0.7-blue.svg) ![Library](https://img.shields.io/badge/Library%20Base-LiquidRemix%2020181220%20-blue.svg)
+![Build](https://img.shields.io/badge/Build%20Status-Updated-green.svg) ![Version](https://img.shields.io/badge/Latest%20Version-0.8.1-blue.svg) ![Library](https://img.shields.io/badge/Library%20Base-LiquidRemix%2020181220%20-blue.svg)
 ![Package](https://img.shields.io/badge/Package-Magisk-blue.svg) ![Magisk Template](https://img.shields.io/badge/Magisk%20Template-v19.0-blue.svg) 
 
 What's lib that get replaced (Core library) :
@@ -32,8 +32,9 @@ Additional library :
 - /vendor/etc/audio_policy.conf
 - /vendor/etc/mixer_paths_mtp.xml
 - /vendor/etc/sound_trigger_mixer_paths.xml
-- /vendor/lib/soundfx/libjamesdsp.so
-- /vendor/lib64/soundfx/libjamesdsp.so
+- /vendor/lib/soundfx/libasphere.so
+- /vendor/lib/soundfx/libshoebox.so
+- /vendor/lib/soundfx/libvolumelistener.so
 
 Compatibitily ROM of this patch (this for already tested):
 - XenonHD Experimental Build
