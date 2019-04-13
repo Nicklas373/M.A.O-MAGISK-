@@ -90,4 +90,4 @@ This is if working hi-res ouput is show :
    - 04-13 21:11:44.293 CFG_EVENT_CREATE_AUDIO_PATCH: old device 0x4 (AUDIO_DEVICE_OUT_WIRED_HEADSET) new device 0x4 (AUDIO_DEVICE_OUT_WIRED_HEADSET)
    - 04-13 21:11:44.295 AT::add       (0xe6d95280)      0     no   4744      65 A  0x000 00000006 00000003  96000  3     0    - 0     0  00000000   7872       0 f         0        0 E6DAA000 00000000
    
-   NOTE; Audio name will be different for each devices, so keep looking for output,sample rate and bitd epth.
+   NOTE; Audio name will be different for each devices, so keep looking for output,sample rate and bit depth.

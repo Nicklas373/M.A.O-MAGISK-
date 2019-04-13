@@ -13,9 +13,9 @@ NOTE: This module created for almost all pie ROMs for Mido and if anyone want to
 ![Package](https://img.shields.io/badge/Package-Magisk-blue.svg) ![Magisk Template](https://img.shields.io/badge/Magisk%20Template-v19.0-blue.svg) 
 
 What's features that enable:
-- 1. Headset High Perfomance Mode (HPH v2)
-- 2. Ultra High Quality Audio Mode (UHQA Mode)
-- 3. Headphone Impedance Detection
+- Headset High Perfomance Mode (HPH v2)
+- Ultra High Quality Audio Mode (UHQA Mode)
+- Headphone Impedance Detection
 
 What's lib that get replaced (Core library) :
 - /system/lib/libaudioclient.so

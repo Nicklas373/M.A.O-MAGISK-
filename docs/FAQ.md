@@ -23,10 +23,10 @@ This not recommended when you want to use Hi-Res audio feature when this feature
 - Why you disabled new volume listener library?
 This is same like a new postprocessing feature that was added from qualcomm itself, it called as "Qualcomm Volume listener" Library. This module work for music processing, notification, in-call, and alarm processing. When listening a music using Hi-Res Audio, audio sample rate conversion isn't happen but bit-depth conversion is happen. This effects can perfectly use 24 bit but switch to floating point bit depth, that not good quality or can be use 32fp or even worse because that effects is active.
 
-This is effects was found on latest CAF tag for audio source, normally not enable for mido but was found enable on other devices like beryllium. I already revert this feature after try to port it.
+This is effects was found on latest CAF tag for audio source, normally not enable for mido but was found enable on other devices like beryllium and lavender. I already revert "music listener" feature only after try to port it.
 
 - Additional explanation about internal DAC
-: Internal DAC, is accessing to your soundcard directly to get priority access to use higher device frequency and bit as device capatibility (in this case 24bit / 192Khz with permissions from audio policy in some application like Neutron music player, USB Audio Player (UAPP) and PowerAMP Music Player.
+: Internal DAC is accessing to your soundcard directly to get priority access to use higher device frequency and bit as device capatibility (in this case 24bit / 192Khz with permissions from audio policy in some application like Neutron music player, USB Audio Player (UAPP) and PowerAMP Music Player.
 
 But on this new pie, audio policy seems get a problem because Mido can't route to other section except [DEEP_BUFFER] That have limitation to only can sampling audio to 16 bit / 48Khz, although i already try to change it manually using neutron music player, for accessing hi-res frequency at least Mido should use [DIRECT] flags to use hi-res audio.
 
