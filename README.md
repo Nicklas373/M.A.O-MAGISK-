@@ -2,15 +2,20 @@
 
 This is a magisk module that containt several libs to restore capatibility of accessing to internal DAC (DIRECT) flags from audio policy on Mido devices after getting updates to latest Pie versions.
 
-This package will restore library and updated audio config to your system.
-
-NOTE: This module created for almost all pie ROMs for Mido and if anyone want to use global version then check [Master](https://github.com/Nicklas373/Internal_DAC_Fixer/tree/master) branch.
+This package will restore library and updated audio config to your system, include CAF audio blobs and enable some audio high quality features after boot on mido (WCD9335).
 
 This package only have aim to restore internal DAC capatibility as bare minimum lib without any harsh modification, no other else and not have any means to insult anyone that work with mido since this is only for my personal use. (Anyone can use it, but DWYOR)
 
+NOTE: This module created for almost all pie ROMs for Mido and if anyone want to use global version then check [Master](https://github.com/Nicklas373/Internal_DAC_Fixer/tree/master) branch. And DIRAC & JamesDSP audio effects was removed from audio config temporary.
+
 # Project Status
-![Build](https://img.shields.io/badge/Build%20Status-Updated-green.svg) ![Version](https://img.shields.io/badge/Latest%20Version-0.8.1-blue.svg) ![Library](https://img.shields.io/badge/Library%20Base-LiquidRemix%2020181220%20-blue.svg)
+![Build](https://img.shields.io/badge/Build%20Status-Updated-green.svg) ![Version](https://img.shields.io/badge/Latest%20Version-0.8.2-blue.svg) ![Library](https://img.shields.io/badge/Library%20Base-LiquidRemix%2020181220%20-blue.svg)
 ![Package](https://img.shields.io/badge/Package-Magisk-blue.svg) ![Magisk Template](https://img.shields.io/badge/Magisk%20Template-v19.0-blue.svg) 
+
+What's features that enable:
+- 1. Headset High Perfomance Mode (HPH v2)
+- 2. Ultra High Quality Audio Mode (UHQA Mode)
+- 3. Headphone Impedance Detection
 
 What's lib that get replaced (Core library) :
 - /system/lib/libaudioclient.so

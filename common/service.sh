@@ -7,6 +7,10 @@
 MODDIR=${0%/*}
 
 # This script will be executed in late_start service mode
+# Let's enable Audio High Perfomance Mode on Mido (WCD9335)
+# 1. Enable Headset High Perfomance Mode (HPH v2)
+# 2. Enable Ultra High Quality Audio Mode (UHQA Mode)
+# 3. Enable Headphone Impedance Detection
 # Let it sleep first for 30 second
 sleep 30
 

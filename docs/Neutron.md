@@ -32,7 +32,7 @@ How to check it :
 	 - Low latency (off)
 	 - Direct USB Access (on)
 	 - DSD, DSD over PCM (DoP) (on)
-	 - Follow Source Frequency (on) [MAKE SURE YOU'VE AUDIO WITH 24BIT/96KHz)
+	 - Follow Source Frequency (on) [MAKE SURE YOU'VE AUDIO WITH 24BIT/96KHz]
 	 - Click checklist icon
   (settings -> resampling)
   :  - choose audiophile
@@ -50,7 +50,7 @@ How to check it :
 
 This is if working hi-res ouput is show :
 
-- Output thread 0xf0bc4000, name AudioOut_4D, tid 7240, type 1 (DIRECT):
+- Output thread 0xe7fee000, name AudioOut_4D, tid 4877, type 1 (DIRECT):
   - I/O handle: 77
   - Standby: no
   - Sample rate: 96000 Hz
@@ -66,28 +66,28 @@ This is if working hi-res ouput is show :
   - Input device: 0 (AUDIO_DEVICE_NONE)
   - Audio source: 0 (default)
   - Normal frame count: 3840
-  - Last write occurred (msecs): 14
-  - Total writes: 332
+  - Last write occurred (msecs): 18
+  - Total writes: 71
   - Delayed writes: 0
   - Blocked in write: yes
   - Suspend count: 0
-  - Sink buffer : 0xf00ef000
-  - Mixer buffer: 0xf0b9b000
-  - Effect buffer: 0xf00f6000
+  - Sink buffer : 0xe6daa000
+  - Mixer buffer: 0xe6d9a000
+  - Effect buffer: 0xe6db1000
   - Fast track availMask=0xfe
   - Standby delay ns=1000000000
-  - AudioStreamOut: 0xf20ada40 flags 0x1 (AUDIO_OUTPUT_FLAG_DIRECT)
-  - Frames written: 1274880
+  - AudioStreamOut: 0xe911b370 flags 0x1 (AUDIO_OUTPUT_FLAG_DIRECT)
+  - Frames written: 272640
   - Suspended frames: 0
   - Hal stream dump:
-  - Stream volumes in dB: 0:-10, 1:-36, 2:-36, 3:-inf, 4:-36, 5:-36, 6:-inf, 7:-36, 8:-21, 9:-96, 10:-58, 11:0, 12:0
+  - Stream volumes in dB: 0:-14, 1:-27, 2:-26, 3:-26, 4:-26, 5:-26, 6:-inf, 7:-27, 8:-21, 9:-96, 10:-27, 11:0, 12:0
   - Normal mixer raw underrun counters: partial=0 empty=0
   - 1 Tracks of which 1 are active
-    - T Name Active Client Session S  Flags   Format Chn mask  SRate ST  L dB  R dB  VS dB   Server - FrmCnt  FrmRdy F Underruns  Flushed Main Buf  Aux Buf
-         - 0    yes   7202      17 A  0x000 00000006 00000003  96000  3     0     0     0  00138300   - 7872    7872 A         0        0 F00EF000 00000000
+    - T Name Active Client Session S  Flags   Format Chn mask  SRate ST  L dB  R dB  VS dB   Server FrmCnt  FrmRdy F = Underruns  Flushed Main Buf  Aux Buf
+         - 0    yes   4744      65 A  0x000 00000006 00000003  96000  3     0     0     0  00043800   7872    7872 A         0        0 E6DAA000 00000000
   - 0 Effect Chains
   - Local log:
-   - 02-14 09:38:54.848 CFG_EVENT_CREATE_AUDIO_PATCH: old device 0x4 (AUDIO_DEVICE_OUT_WIRED_HEADSET) - new device 0x4 (AUDIO_DEVICE_OUT_WIRED_HEADSET)
-   - 02-14 09:38:54.854 AT::add       (0xf20f3180)      0     no   7202      17 A  0x000 00000006 - 00000003  96000  3     0     0     0  00000000   7872       0 f         0        0 F00EF000 00000000
+   - 04-13 21:11:44.293 CFG_EVENT_CREATE_AUDIO_PATCH: old device 0x4 (AUDIO_DEVICE_OUT_WIRED_HEADSET) new device 0x4 (AUDIO_DEVICE_OUT_WIRED_HEADSET)
+   - 04-13 21:11:44.295 AT::add       (0xe6d95280)      0     no   4744      65 A  0x000 00000006 00000003  96000  3     0    - 0     0  00000000   7872       0 f         0        0 E6DAA000 00000000
    
    NOTE; Audio name will be different for each devices, so keep looking for output,sample rate and bitd epth.
