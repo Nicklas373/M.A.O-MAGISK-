@@ -17,10 +17,9 @@ What's features that enable:
 
 How to active Audio High Perfomance Mode:
 - Use terminal emulator app or other similiar app on playstore
-- Type
+- Type:
 - su
 - uhqa
-- Try to follow guide inside script
 
 What's lib that get replaced (Core library) :
 - /system/lib/libaudioclient.so
