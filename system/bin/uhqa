@@ -1,0 +1,185 @@
+#!/system/bin/sh
+#
+# This script will enable Audio High Performance Mode for Mido (WCD9335)
+# Based on latest syberia kernel
+# NOTE : Not all kernel have same features, so not all features that describe
+# in here will enable at all.
+#
+# What features that will enable :
+# 1. Headset High Perfomance Mode (HPH v2)
+# 2. Ultra High Quality Audio Mode (UHQA Mode)
+# 3. Headphone Impedance Detection
+#
+
+# Declare sound card path & parameters
+HPH="/sys/module/snd_soc_wcd9330/parameters/high_perf_mode"
+HUWIFI="/sys/module/snd_soc_wcd9335/parameters/huwifi_mode"
+IMPEDANCE="/sys/module/snd_soc_wcd9xxx/parameters/impedance_detect_en"
+SDCARD="/sdcard"
+HPH_LOG="/sdcard/hph.txt"
+HUWIFI_LOG="/sdcard/huwifi.txt"
+IMPEDANCE_LOG="/sdcard/impedance.txt"
+
+# Create temporary log file
+log_file(){
+if [ -f "$HPH_LOG" ]
+then
+	echo ""
+else
+	echo " " > $SDCARD/hph.txt
+fi
+if [ -f "$HUWIFI_LOG" ]
+then
+	echo ""
+else
+	echo " " > $SDCARD/huwifi.txt
+fi
+if [ -f "$IMPEDANCE_LOG" ]
+then
+	echo ""
+else
+	echo " " > $SDCARD/impedance.txt
+fi
+}
+
+# Checking if path is exist
+path(){
+if [ -f "$HPH" ]
+then
+	chmod 0644 $HPH
+	echo "HPH=1" > $HPH_LOG
+else
+	echo "HPH=0" > $HPH_LOG
+fi
+if [ -f "$HUWIFI" ]
+then
+	chmod 0644 $HUWIFI
+	echo "HUWIFI=1" > $HUWIFI_LOG
+else
+	echo "HUWIFI=0" > $HUWIFI_LOG
+fi
+if [ -f "$IMPEDANCE" ]
+then
+	chmod 0644 $IMPEDANCE
+	echo "IMPEDANCE=1" > $IMPEDANCE_LOG
+else
+	echo "IMPEDANCE=0" > $IMPEDANCE_LOG
+fi
+}
+
+# Declare Main Program
+main(){
+log_file
+echo "Welcome To MIDF Audio High Perfomance Mode Module"
+echo "Checking available sound card for Audio High Perfomance Mode"
+path
+echo "Which module that you want to active it?"
+if [ "`grep HPH=1 /sdcard/hph.txt`" ];
+then
+	echo "|*| Headset High Perfomance Mode (As 1)"
+fi
+if [ "`grep HUWIFI=1 /sdcard/huwifi.txt`" ];
+then
+	echo "|*| Ultra High Quality Audio Mode (As 2)"
+fi
+if [ "`grep IMPEDANCE=1 /sdcard/impedance.txt`" ];
+then
+	echo "|*| Headphone Impedance Detection Mode (As 3)"
+fi
+echo "NOTE: Write Number [1-3]"
+read decision
+if [ "$decision" == "1" ];
+	then
+		if [ "`grep HPH=1 /sdcard/hph.txt`" ];
+			then
+				if [ "`grep 0 /sys/module/snd_soc_wcd9330/parameters/high_perf_mode`" ];
+					then
+						echo "Headset High Perfomance Mode is disable"
+						echo "Make it active..."
+						echo "1" > /sys/module/snd_soc_wcd9330/parameters/high_perf_mode
+						echo "Headset High Perfomance Mode is enable"
+				else
+						echo "Headset High Perfomance Mode is enable"
+						echo "Do you want to disable it ?"
+						echo "1. Yes"
+						echo "2. No"
+						echo "NOTE: Write Number [1-2]"
+						read option
+						if [ "$option" == "1" ];
+							then
+								echo "0" > /sys/module/snd_soc_wcd9330/parameters/high_perf_mode
+								echo "Headset High Perfomance Mode is disable"
+						fi
+						if [ "$option" == "2" ];
+							then
+								echo "Headset High Perfomance Mode still active"
+						fi
+				fi
+		fi
+fi
+if [ "$decision" == "2" ];
+	then
+		if [ "`grep HUWIFI=1 /sdcard/huwifi.txt`" ];
+			then
+				if [ "`grep 0 /sys/module/snd_soc_wcd9335/parameters/huwifi_mode`" ];
+					then
+						echo "Ultra High Quality Audio Mode is disable"
+						echo "Make it active..."
+						echo "1" > /sys/module/snd_soc_wcd9335/parameters/huwifi_mode
+				else
+						echo "Ultra High Quality Audio Mode is enable"
+						echo "Do you want to disable it ?"
+						echo "1. Yes"
+						echo "2. No"
+						echo "NOTE: Write Number [1-2]"
+						read option
+						if [ "$option" == "1" ];
+							then
+								echo "0" > /sys/module/snd_soc_wcd9335/parameters/huwifi_mode
+								echo "Ultra High Quality Audio Mode is disable"
+						fi
+						if [ "$option" == "2" ];
+							then
+								echo "Ultra High Quality Audio Mode still active"
+						fi
+				fi
+		fi
+fi
+if [ "$decision" == "3" ];
+	then
+		if [ "`grep IMPEDANCE=1 /sdcard/impedance.txt`" ];
+			then
+				if [ "`grep 0 /sys/module/snd_soc_wcd9xxx/parameters/impedance_detect_en`" ];
+					then
+						echo "Headphone Impedance Detection Mode is disable"
+						echo "Make it active..."
+						echo "1" > /sys/module/snd_soc_wcd9xxx/parameters/impedance_detect_en
+				else
+						echo "Headphone Impedance Detection Mode is enable"
+						echo "Do you want to disable it ?"
+						echo "1. Yes"
+						echo "2. No"
+						echo "NOTE: Write Number [1-2]"
+						read option
+						if [ "$option" == "1" ];
+							then
+								echo "0" > /sys/module/snd_soc_wcd9xxx/parameters/impedance_detect_en
+								echo "Headphone Impedance Detection Mode is disable"
+						fi
+						if [ "$option" == "2" ];
+							then
+								echo "Headphone Impedance Detection Mode still active"
+						fi
+				fi
+		fi
+fi
+echo "Script Finish"
+echo "Cleaning"
+rm $HPH_LOG
+rm $HUWIFI_LOG
+rm $IMPEDANCE_LOG
+echo "Done"
+}
+
+# Begin Program
+main
