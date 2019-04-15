@@ -7,12 +7,13 @@ This package will restore library and updated audio config to your system, inclu
 This package only have aim to restore internal DAC capatibility as bare minimum lib without any harsh modification, no other else and not have any means to insult anyone that work with mido since this is only for my personal use. (Anyone can use it, but DWYOR)
 
 # Project Status
-![Build](https://img.shields.io/badge/Build%20Status-Updated-green.svg) ![Version](https://img.shields.io/badge/Latest%20Version-0.8.3-blue.svg) ![Library](https://img.shields.io/badge/Library%20Base-LiquidRemix%2020181220%20-blue.svg)
+![Build](https://img.shields.io/badge/Build%20Status-Updated-green.svg) ![Version](https://img.shields.io/badge/Latest%20Version-0.8.4-blue.svg) ![Library](https://img.shields.io/badge/Library%20Base-LiquidRemix%2020181220%20-blue.svg)
 ![Package](https://img.shields.io/badge/Package-Magisk-blue.svg) ![Magisk Template](https://img.shields.io/badge/Magisk%20Template-v19.0-blue.svg) 
 
 What's features that enable:
 - Headset High Perfomance Mode (HPH v2)
 - Ultra High Quality Audio Mode (UHQA Mode)
+- Low Distortion AMP
 - Headphone Impedance Detection
 
 How to active Audio High Perfomance Mode:
@@ -54,6 +55,7 @@ Compatibitily ROM of this patch (this for already tested):
 NOTE: 
 - This module created for almost all pie ROMs for Mido and if anyone want to use global version then check [Master](https://github.com/Nicklas373/Internal_DAC_Fixer/tree/master) branch. And DIRAC & JamesDSP audio effects was removed from audio config temporary.
 - Audio High Quality Mode not enable by default, it need user activation to configure it to avoid some performance degredation that happen on high gaming or high perfomance usage.
+- Some features for audio high quality mode is not exist in all kernel, so not all features will same exist in every ROM.
 
 Other Information Catalog:
 - [FAQ](https://github.com/Nicklas373/Internal_DAC_Fixer/blob/master/docs/FAQ.md)
