@@ -80,9 +80,9 @@ fi
 if [ -f "$AMP" ]
 then
 	chmod 0644 $HUWIFI
-	echo "AMP=1" > $HUWIFI_LOG
+	echo "AMP=1" > $AMP_LOG
 else
-	echo "AMP=0" > $HUWIFI_LOG
+	echo "AMP=0" > $AMP_LOG
 fi
 if [ -f "$IMPEDANCE" ]
 then
