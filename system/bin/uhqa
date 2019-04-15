@@ -451,6 +451,7 @@ echo "Done"
 
 main(){
 mounting
+log_file
 if [ "`grep ro.product_vendor_name=syberia_mido /system/build.prop`" ];
 then
 	main_syberia
