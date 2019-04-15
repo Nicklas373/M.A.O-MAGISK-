@@ -10,7 +10,8 @@ MODDIR=${0%/*}
 # Let's enable Audio High Perfomance Mode on Mido (WCD9335)
 # 1. Enable Headset High Perfomance Mode (HPH v2)
 # 2. Enable Ultra High Quality Audio Mode (UHQA Mode)
-# 3. Enable Headphone Impedance Detection
+# 3. Enable Low Distortion AMP
+# 4. Enable Headphone Impedance Detection
 
 # Let it sleep first for 30 second
 sleep 30
@@ -19,6 +20,7 @@ sleep 30
 # Let userspace script configure it by itself (It can reduce some lag when on gaming or high usage)
 echo "0" > /sys/module/snd_soc_wcd9330/parameters/high_perf_mode
 echo "0" > /sys/module/snd_soc_wcd9335/parameters/huwifi_mode
+echo "0" > /sys/module/snd_soc_wcd9335/parameters/low_distort_amp
 echo "0" > /sys/module/snd_soc_wcd9xxx/parameters/impedance_detect_en
 
 # Set permission for Audio High Performance Mode Scripts
