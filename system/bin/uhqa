@@ -25,12 +25,12 @@ IMPEDANCE_LOG="/sdcard/impedance.txt"
 
 # Mount system
 mounting(){
-mount -o remount, rw /system
+mount -o remount /system
 }
 
 # Unmount system 
 umounting(){
-mount -o remount, ro /system
+umount /system
 }
 
 # Create temporary log file
@@ -115,7 +115,7 @@ if [ "`grep IMPEDANCE=1 /sdcard/impedance.txt`" ];
 then
 	echo "|*| Headphone Impedance Detection Mode (As 4)"
 fi
-echo "NOTE: Write Number [1-3]"
+echo "NOTE: Write Number [1-4]"
 read decision
 if [ "$decision" == "1" ];
 	then
@@ -252,7 +252,7 @@ echo "3. Low Distortion AMP Mode"
 echo "4. Headphone Impedance Detection Mode"
 echo "5. Enable All"
 echo "6. Disable All"
-echo "NOTE: Write Number [1-4]"
+echo "NOTE: Write Number [1-6]"
 read decision
 if [ "$decision" == "1" ];
 	then
@@ -398,7 +398,7 @@ if [ "$decision" == "5" ];
 			then
 				echo "Headphone Impedance Detection Mode is active"
 		else
-				echo "Headphone Impedance Detection Mode is active"
+				echo "Headphone Impedance Detection Mode is not active"
 				echo "1" > /sys/module/snd_soc_wcd9xxx/parameters/impedance_detect_en
 				echo "Headphone Impedance Detection Mode is active"
 		fi
@@ -452,13 +452,13 @@ echo "Done"
 main(){
 mounting
 log_file
-if [ "`grep ro.product_vendor_name=syberia_mido /system/build.prop`" ];
+if [ "`grep ro.product.name=syberia_mido /system/build.prop`" ];
 then
 	main_syberia
 else
 	main_global
 fi
-unmounting
+umounting
 }
 
 # Begin Program
