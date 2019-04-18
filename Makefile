@@ -2,7 +2,7 @@ NAME ?= MIDF
 
 DATE := $(shell date "+%Y%m%d-%H%M")
 
-VER := v0.8.4
+VER := v0.8.4-B
 
 CODE := MAGISK
 
