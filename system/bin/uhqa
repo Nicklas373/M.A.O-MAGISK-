@@ -83,8 +83,8 @@ else
 fi
 }
 
-# Declare Main Global ROMs
-main_global(){
+# Declare Main Program
+main(){
 mounting
 log_file
 echo "Welcome To MIDF Audio High Perfomance Mode Module"
