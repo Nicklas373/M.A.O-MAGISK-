@@ -271,12 +271,13 @@ if [ "$decision" == "5" ];
 				echo "|*| Headphone Impedance Detection Mode is exist"
 				echo "Check status for Impedance"
 				if [ "`grep 1 /sys/module/snd_soc_wcd9xxx/parameters/impedance_detect_en`" ];
-			then
-				echo "Headphone Impedance Detection Mode is active"
-		else
-				echo "Headphone Impedance Detection Mode is not active"
-				echo "1" > /sys/module/snd_soc_wcd9xxx/parameters/impedance_detect_en
-				echo "Headphone Impedance Detection Mode is active"
+					then
+						echo "Headphone Impedance Detection Mode is active"
+				else
+						echo "Headphone Impedance Detection Mode is not active"
+						echo "1" > /sys/module/snd_soc_wcd9xxx/parameters/impedance_detect_en
+						echo "Headphone Impedance Detection Mode is active"
+				fi
 		fi
 fi
 if [ "$decision" == "6" ];
