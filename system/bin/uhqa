@@ -85,10 +85,9 @@ fi
 
 # Declare Main Program
 main(){
-mounting
 log_file
-echo "Welcome To MIDF Audio High Perfomance Mode Module"
-echo "Checking available sound card for Audio High Perfomance Mode"
+echo "Welcome To Audio High Perfomance Mode Module"
+echo "Checking available sound card path for Audio High Perfomance Mode"
 path
 echo "Which module that you want to active it?"
 if [ "`grep HPH=1 /sdcard/hph.txt`" ];
