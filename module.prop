@@ -1,6 +1,6 @@
 id=internaldacfixer
 name=Mido Internal DAC Fixer
-version=0.8.4-B
-versionCode=20190418
+version=0.8.6
+versionCode=20190423
 author=Dicky Herlambang
 description=A Simple module to fix internal DAC issue on Xiaomi Redmi Note 4x (Snapdragon Variant) in latest Pie ROM (Optimized for Syberia ROM).
