@@ -1,10 +1,10 @@
-# Mido Internal DAC Fixer for Android 9.0.x (AOSP/LOS/MAGISK)
+# Mido Internal DAC Fixer for Android 9.0.x (AOSP/LOS/MAGISK) | Xiaomi Redmi Note 4X (Snapdragon)
 
-This is a magisk module that containt several libs to restore capatibility of accessing to internal DAC (DIRECT) flags from audio policy on Mido devices after getting updates to latest Pie versions.
+This is a magisk module that containt several libs to restore capatibility from accessing to DIRECT flags from audio policy on Xiaomi Redmi Note 4x (Snapdragon) after getting update to latest Pie Based ROMs.
 
 This package will restore library and updated audio config to your system, include CAF audio blobs and enable some audio high quality features on mido (WCD9335).
 
-This package only have aim to restore internal DAC capatibility as bare minimum lib without any harsh modification, no other else and not have any means to insult anyone that work with mido since this is only for my personal use. (Anyone can use it, but DWYOR)
+This package only have aim to restore internal DAC capatibility as bare minimum lib without any harsh modification, no other else and not have any means to insult anyone that work with Mido since this is only for my personal use. (Anyone can use it, but DWYOR)
 
 # Project Status
 ![Build](https://img.shields.io/badge/Build%20Status-Updated-green.svg) ![Version](https://img.shields.io/badge/Latest%20Version-0.8.6-blue.svg) ![Library](https://img.shields.io/badge/Library%20Base-LiquidRemix%2020181220%20-blue.svg)
@@ -23,17 +23,10 @@ How to active Audio High Perfomance Mode:
 - uhqa
 
 What's lib that get replaced (Core library) :
-- /system/lib/libaudioclient.so
-- /system/lib/libaudioeffect_jni.so
-- /system/lib/libaudioflinger.so
 - /system/lib/libaudiopolicyenginedefault.so
 - /system/lib/libaudiopolicymanager.so
 - /system/lib/libaudiopolicymanagerdefault.so
 - /system/lib/libaudiopolicyservice.so
-- /system/lib/libaudioprocessing.so
-- /system/lib/libsoundpool.so
-- /system/lib/libsoundtrigger.so
-- /system/lib/libsoundtriggerservice.so
 
 Additional library :
 - /vendor/etc/audio_policy_configuration.xml
@@ -53,7 +46,8 @@ Compatibitily ROM of this patch (this for already tested):
 - LineageOS 16 Unofficial Build
 
 NOTE: 
-- This module created for almost all pie ROMs for Mido and if anyone want to use global version then check [Master](https://github.com/Nicklas373/Internal_DAC_Fixer/tree/master) branch. And DIRAC & JamesDSP audio effects was removed from audio config temporary.
+- This module was created for almost all pie ROMs for Mido and if anyone want to use global version then check [Master](https://github.com/Nicklas373/Internal_DAC_Fixer/tree/master) branch. 
+- DIRAC & JamesDSP audio effects was removed from audio config temporary (I'm not used that effects anymore, based to CAF audio source)
 - Audio High Quality Mode not enable by default, it need user activation to configure it to avoid some performance degredation that happen on high gaming or high perfomance usage.
 - Some features for audio high quality mode is not exist in all kernel, so not all features will same exist in every ROM.
 
