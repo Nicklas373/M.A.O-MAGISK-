@@ -26,7 +26,7 @@ How to check it :
 	     - Hi-Res Bluetooth (on)
 	     - Custom Format (on)
 		:  - Format (16bit int, 24bit int, 32bit int)
-		   - Frequency (44100,48000.96000,192000)
+		   - Frequency (44100,48000,88200,96000,176400,192000)
 		   - Mode (DIRECT)
      - 32-bit Output (IEEE 754) (off)
 	 - Low latency (off)
