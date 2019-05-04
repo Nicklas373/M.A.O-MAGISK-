@@ -23,7 +23,7 @@ chmod 0644 /sys/module/snd_soc_wcd9335/parameters/low_distort_amp
 chmod 0644 /sys/module/snd_soc_wcd9xxx/parameters/impedance_detect_en
 
 # Disable Audio High Perfomance Mode by default on boot
-# Let userspace script configure it by itself (It can reduce some lag when on gaming or high usage)
+# Let M.A.O (App) configure it by itself (It can reduce some lag when on gaming or high usage)
 echo "0" > /sys/module/snd_soc_wcd9330/parameters/high_perf_mode
 echo "0" > /sys/module/snd_soc_wcd9335/parameters/huwifi_mode
 echo "0" > /sys/module/snd_soc_wcd9335/parameters/low_distort_amp
