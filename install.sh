@@ -123,7 +123,7 @@ REPLACE="
 
 print_modname() {
   ui_print "                                 "
-  ui_print "*****Mido Internal DAC Fixer*****"
+  ui_print "******Mido Audio Optimizer*******"
   ui_print "*                               *"
   ui_print "*    For Pie ROM Based Only     *"
   ui_print "*                               *"
