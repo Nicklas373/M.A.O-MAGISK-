@@ -28,3 +28,6 @@ echo "0" > /sys/module/snd_soc_wcd9330/parameters/high_perf_mode
 echo "0" > /sys/module/snd_soc_wcd9335/parameters/huwifi_mode
 echo "0" > /sys/module/snd_soc_wcd9335/parameters/low_distort_amp
 echo "0" > /sys/module/snd_soc_wcd9xxx/parameters/impedance_detect_en
+
+# Set permission for Audio High Performance Mode Scripts
+chmod 0777 /system/bin/uhqa
