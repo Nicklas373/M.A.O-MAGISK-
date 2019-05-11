@@ -21,4 +21,4 @@ it shows like normally neutron that tell you're play with hi-res audio quality
 
 but in all screenshot, it tell device isn't using any alsa audio server like what it should be shown as worked internal DAC access, so your internal DAC is working correctly with this patch.
 
-NOTE: for screenshot #2 and #3 can't be accessed anymore if you're using enforcing ROM (i don't know why), so it's really depend on media audio flinger command.
+NOTE: for screenshot #2 and #3 can't be accessed anymore if you're using enforcing ROM because on Enforcing SELinux that mido have [That's good for enforcing anyway], so it's really depend on media audio flinger command.

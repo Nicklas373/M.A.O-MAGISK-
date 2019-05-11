@@ -22,4 +22,4 @@ but in all screenshot, it tell device still using alsa audio server that tell tr
 
 NOTE: If internal dac is working, all alsa port should be closed, and on audio flinger, it already tell as 96khz in a log, not 48khz...
 
-and for screenshot #2 and #3 can't be accessed anymore if you're using enforcing ROM (i don't know why), so it's really depend on media audio flinger command.
+and for screenshot #2 and #3 can't be accessed anymore if you're using enforcing ROM because on Enforcing SELinux that mido have [That's good for enforcing anyway], so it's really depend on media audio flinger command.
