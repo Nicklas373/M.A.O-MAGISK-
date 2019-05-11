@@ -44,9 +44,17 @@ How to check it :
   
 - After that search which port that is using it, normally it have output device detected as wired headset with 96Khz sample rate and 24 bit PCM packed for bit depth.
 
-- Watch the HAL buffer size, 
-	* if you play audio with 24bit 96Khz then it should equals to 23040 bytes
-	* if you play audio with 24bit 48Khz then it should equals to 11520 bytes
+- Watch the HAL buffer size,
+	* if you play audio with 32bit 192.0Khz then it should equals to 61440 bytes
+	* if you play audio with 24bit 192.0Khz then it should equals to 46080 bytes
+	* if you play audio with 24bit 96.0Khz then it should equals to 23040 bytes
+	* if you play audio with 24bit 48.0Khz then it should equals to 11520 bytes 
+	* if you play audio with 24bit 44.1Khz then it should equals to 10752 bytes
+
+NOTE :
+- Syberia OS have some tweaks on device tree, it can encode on 24bit 48Khz by default and max
+- Mido maximum capatibility is encode 32bit 192.0 Khz.
+- Other ROMs beside Syberia OS or not applied patch to push 24bit by default, only have capatibility to encode 6bit 48Khz at max and standby, Can't be higher during audiopolicy problem (So Qualcomm Aqstic Audio isn't used in this case) 
 
 This is if working hi-res ouput is show :
 
