@@ -4,7 +4,7 @@
 
 # CAF Media Audio Properties
 af.fast_track_multiplier=1
-audio.offload.disable=1
+audio.offload.disable=false
 persist.audio.fluence.speaker=true
 persist.vendor.audio.speaker.prot.enable=false
 persist.vendor.bt.enable.splita2dp=false
