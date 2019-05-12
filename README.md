@@ -49,6 +49,7 @@ NOTE:
 - Audio High Quality Mode not enable by default, it need user action on app to enable it to avoid some performance degredation that happen on high gaming or high perfomance usage.
 - Some features for audio high quality mode is not exist in all kernel, so not all features will same exist in every ROM.
 - If bootloop was happen after flashing this mod, try to flash compatibility package on this release [Compatibitily](https://github.com/Nicklas373/M.A.O-MAGISK-/releases/tag/1.0-C)
+- This module won't compatible with any soundmod during i use pure audio effects from mido, but dirac audio effects will work fine.
 
 Other Information Catalog:
 - [FAQ](https://github.com/Nicklas373/Internal_DAC_Fixer/blob/master/docs/FAQ.md)
