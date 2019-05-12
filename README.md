@@ -4,7 +4,7 @@ This is a magisk module that containt custom AudioPolicyManager libs to restore 
 
 This package will restore AudioPolicyManager libs and updated audio config to your system, include CAF audio blobs and can control some audio high quality features on mido (WCD9335).
 
-This package only have aim to restore internal DAC capatibility as bare minimum lib without any harsh modification.
+This package only have aim to restore internal DAC capatibility as bare minimum lib without any harsh modification, no other else and not have any means to insult anyone that work with Mido since this is only for my personal use. (Anyone can use it, but DWYOR).
 
 # Project Status
 ![Build](https://img.shields.io/badge/Build%20Status-Updated-green.svg) ![Version](https://img.shields.io/badge/Latest%20Version-0.9.5-blue.svg) ![Library](https://img.shields.io/badge/Library%20Base-SyberiaOS%2020190511-blue.svg)
@@ -48,7 +48,7 @@ NOTE:
 - JamesDSP audio effects was removed from audio config temporary (I'm not used that effects anymore)
 - Audio High Quality Mode not enable by default, it need user action on app to enable it to avoid some performance degredation that happen on high gaming or high perfomance usage.
 - Some features for audio high quality mode is not exist in all kernel, so not all features will same exist in every ROM.
-- If bootloop was happen after flashing this mod, try to flash compatibility package on this release [Compatibitily](https://github.com/Nicklas373/M.A.O-MAGISK-/releases/tag/1.0-C)
+- If bootloop was happen after flashing this mod, try to flash compatibility package on this release [Compatibility](https://github.com/Nicklas373/M.A.O-MAGISK-/releases/tag/1.0-C)
 - This module won't compatible with any soundmod during i use pure audio effects from mido, but dirac audio effects will work fine.
 
 Other Information Catalog:
