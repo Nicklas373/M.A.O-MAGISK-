@@ -12,3 +12,4 @@ ro.qc.sdk.audio.fluencetype=fluence
 vendor.audio.hw.aac.encoder=true
 vendor.audio.offload.passthrough=false
 vendor.mm.enable.qcom_parser=17825791
+vendor.audio.parser.ip.buffer.size=262144
