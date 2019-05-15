@@ -18,7 +18,7 @@ What's features that enable to control (using app):
 
 How to control Audio High Perfomance Mode:
 - Install [M.A.O](https://github.com/Nicklas373/M.A.O) App
-- Go to DAC Configure menu
+- Go to kernel audio features menu
 - Enable features that exist on your kernel.
 - Done
 
