@@ -7,11 +7,13 @@
 MODDIR=${0%/*}
 
 # This script will be executed in late_start service mode
-# Let's enable Audio High Perfomance Mode on Mido (WCD9335)
-# 1. Enable Headset High Perfomance Mode (HPH v2)
-# 2. Enable Ultra High Quality Audio Mode (UHQA Mode)
-# 3. Enable Low Distortion AMP
-# 4. Enable Headphone Impedance Detection
+# Let's disable Audio High Perfomance Mode on Mido (WCD9335)
+# This will reduce some distortion when on high gaming usage
+#
+# 1. Headset High Perfomance Mode (HPH v2)
+# 2. Ultra High Quality Audio Mode (UHQA Mode)
+# 3. Low Distortion AMP
+# 4. Headphone Impedance Detection
 
 # Let it sleep first for 30 second
 sleep 30
@@ -23,7 +25,7 @@ chmod 0644 /sys/module/snd_soc_wcd9335/parameters/low_distort_amp
 chmod 0644 /sys/module/snd_soc_wcd9xxx/parameters/impedance_detect_en
 
 # Disable Audio High Perfomance Mode by default on boot
-# Let M.A.O (App) configure it by itself (It can reduce some lag when on gaming or high usage)
+# Let M.A.O (App) configure it by itself (Userspace should control it)
 echo "0" > /sys/module/snd_soc_wcd9330/parameters/high_perf_mode
 echo "0" > /sys/module/snd_soc_wcd9335/parameters/huwifi_mode
 echo "0" > /sys/module/snd_soc_wcd9335/parameters/low_distort_amp

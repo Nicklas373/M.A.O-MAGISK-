@@ -1,4 +1,4 @@
-#How to check internal DAC is working
+# How to check internal DAC is working
 
 I'm using neutron music player for this case, for another music player maybe you can use UAPP but i'm not providing any guide for that because i'm not using it right now.
 
