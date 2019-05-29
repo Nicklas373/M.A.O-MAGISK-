@@ -1,11 +1,11 @@
 # Mido Audio Optimizer (M.A.O) for Android 9.0.x (AOSP/LOS/MAGISK) | Xiaomi Redmi Note 4X (Snapdragon)
 
-This is a magisk module that will restore capatibility from accessing to DIRECT flags or other audio flags on Xiaomi Redmi Note 4x (Snapdragon) in some audio player apps, this package will modified system properties and customize some audio config to your system to bring pure audio perfomance with Hi-Res capatibility on mido (WCD9335).
+This is a magisk module that will restore capatibility from accessing to DIRECT flags or other audio flags on Xiaomi Redmi Note 4x (Snapdragon) in some audio player apps, this package will modified system properties and optimize some audio config to your system to bring pure audio perfomance with Hi-Res compatibility on mido (WCD9335).
 
 This package only have aim to restore internal DAC capatibility as bare minimum files without any harsh modification, no other else and not have any means to insult anyone that work with Mido since this is only for my personal use. (Anyone can use it, but DWYOR).
 
 # Project Status
-![Build](https://img.shields.io/badge/Build%20Status-Updated-green.svg) ![Version](https://img.shields.io/badge/Latest%20Version-0.9.5-blue.svg)
+![Build](https://img.shields.io/badge/Build%20Status-Updated-green.svg) ![Version](https://img.shields.io/badge/Latest%20Version-0.9.6-blue.svg)
 ![Package](https://img.shields.io/badge/Package-Magisk-blue.svg) ![Magisk Template](https://img.shields.io/badge/Magisk%20Template-v19.0-blue.svg) 
 
 How to control Audio High Perfomance Mode:
