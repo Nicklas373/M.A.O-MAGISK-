@@ -31,7 +31,7 @@ Compatibitily ROM of this patch (this for already tested):
 - LineageOS 16 Unofficial Build
 
 NOTE: 
-- This module was created for almost all pie ROMs for Mido and if anyone want to use global version then check [Master](https://github.com/Nicklas373/Internal_DAC_Fixer/tree/master) branch. 
+- This module was created for almost all pie ROMs for Mido and if anyone want to use global version then check [Flashable](https://github.com/Nicklas373/Internal_DAC_Fixer/tree/flashable) branch. 
 - JamesDSP audio effects was removed from audio config temporary (I'm not used that effects anymore)
 - Audio High Quality Mode not enable by default, it need user action on app to enable it to avoid some performance degredation that happen on high gaming or high perfomance usage.
 - Some features for audio high quality mode is not exist in all kernel, so not all features will same exist in every ROM.
@@ -40,6 +40,6 @@ NOTE:
 
 Other Information Catalog:
 - [FAQ](https://github.com/Nicklas373/Internal_DAC_Fixer/blob/master/docs/FAQ.md)
-- [How to check internal DAC is working](https://github.com/Nicklas373/Internal_DAC_Fixer/blob/master/docs/Neutron.md)
-- [Patched Internal DAC Result](https://github.com/Nicklas373/Internal_DAC_Fixer/blob/master/docs/Patched.md)
-- [Unpatched Internal DAC Result](https://github.com/Nicklas373/Internal_DAC_Fixer/blob/master/docs/Unpatched.md)
+- [How to check internal DAC is working](https://github.com/Nicklas373/Internal_DAC_Fixer/blob/dev/magisk/docs/Neutron.md)
+- [Patched Internal DAC Result](https://github.com/Nicklas373/Internal_DAC_Fixer/blob/dev/magisk/docs/Patched.md)
+- [Unpatched Internal DAC Result](https://github.com/Nicklas373/Internal_DAC_Fixer/blob/dev/magisk/docs/Unpatched.md)
