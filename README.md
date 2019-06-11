@@ -1,6 +1,6 @@
 # Mido Audio Optimizer (M.A.O) for Android 9.0.x (AOSP/LOS/MAGISK) | Xiaomi Redmi Note 4X (Snapdragon)
 
-This is a magisk module that will restore capatibility from accessing to DIRECT flags or other audio flags on Xiaomi Redmi Note 4x (Snapdragon) in some audio player apps, this package will modified system properties and optimize some audio config to your system to bring pure audio perfomance with Hi-Res compatibility on mido (WCD9335).
+This is a magisk module that will modified system audio properties to bring pure audio perfomance and also restore capatibility from accessing to DIRECT flags or other audio flags on Xiaomi Redmi Note 4x (Snapdragon) in some audio player apps with Hi-Res compatibility on mido (WCD9335).
 
 This package only have aim to restore internal DAC capatibility as bare minimum files without any harsh modification, no other else and not have any means to insult anyone that work with Mido since this is only for my personal use. (Anyone can use it, but DWYOR).
 
@@ -15,12 +15,14 @@ How to control Audio High Perfomance Mode:
 - Done
 
 Additional library :
+- /vendor/etc/audio_effects.xml
 - /vendor/etc/audio_policy_configuration.xml
 - /vendor/etc/audio_platform_info.xml
 - /vendor/etc/audio_output_policy.conf
 - /vendor/etc/audio_policy.conf
 - /vendor/etc/mixer_paths_mtp.xml
 - /vendor/etc/sound_trigger_mixer_paths.xml
+- /vendor/etc/sound_trigger_mixer_platform_info.xml
 
 Compatibitily ROM of this patch (this for already tested):
 - XenonHD Experimental Build
