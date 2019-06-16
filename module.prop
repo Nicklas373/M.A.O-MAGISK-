@@ -1,6 +1,6 @@
 id=internaldacfixer
 name=M.A.O
-version=0.9.6.2
-versionCode=20190611
+version=0.9.6.3
+versionCode=20190616
 author=Dicky Herlambang
 description=A Simple module to optimize audio performance on Xiaomi Redmi Note 4x (Snapdragon Variant) and also fix internal DAC issue in latest Pie ROM without massive modifications.
