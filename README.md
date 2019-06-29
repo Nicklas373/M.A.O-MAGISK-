@@ -1,4 +1,4 @@
-# Mido Audio Optimizer (M.A.O) for Android 9.0.x (AOSP/LOS/MAGISK) | Xiaomi Redmi Note 4X (Snapdragon)
+# Mido Audio Optimizer (M.A.O) for Android 8.0.x (AOSP/LOS/MAGISK) | Xiaomi Redmi Note 4X (Snapdragon)
 
 This is a magisk module that will modified system audio properties to bring pure audio perfomance and also restore capatibility from accessing to DIRECT flags or other audio flags on Xiaomi Redmi Note 4x (Snapdragon) in some audio player apps with Hi-Res compatibility on mido (WCD9335).
 

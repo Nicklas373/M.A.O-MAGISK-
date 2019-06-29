@@ -83,9 +83,9 @@ print_modname
 
 ui_print "****************** Software ********************"
 ui_print "Custom Package  : Mido Audio Optimizer          "
-ui_print "Android version : 9.0.x                         "
-ui_print "SDK version     : 28                            "
-ui_print "Build date      : Tue Jun 18 18:28:20 GMT+7 2019"
+ui_print "Android version : 8.0.x                         "
+ui_print "SDK version     : 26                            "
+ui_print "Build date      : Sat Jun 29 09:58:20 GMT+7 2019"
 ui_print "Build ID        : 0.9.7                         "
 ui_print "Developed By    : Dicky Herlambang              "
 ui_print "************************************************"
