@@ -1,4 +1,4 @@
-NAME ?= M.A.O
+NAME := M.A.O
 
 DATE := $(shell date "+%Y%m%d-%H%M")
 
@@ -24,9 +24,9 @@ $(ZIP):
 	@echo "Generating SHA1..."
 	@sha1sum "$@" > "$@.sha1"
 	@cat "$@.sha1"
-	@echo "Done."	
+	@echo "Done."
 	@mv $(HOME)/docs docs
 	@rm $(ZIP)
 	@mv $(ZIP_SIGN) $(HOME)/$(ZIP_SIGN)
 	@mv $(ZIP_SHA) $(HOME)/$(ZIP_SHA)
-	
+
