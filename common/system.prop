@@ -8,6 +8,6 @@ audio.offload.disable=false
 vendor.mm.enable.qcom_parser=17825791
 vendor.audio.parser.ip.buffer.size=262144
 persist.vendor.audio.fluence.speaker=true
-persist.vendor.audio.fluence.voicecall=false
+persist.vendor.audio.fluence.voicecall=true
 persist.vendor.audio.fluence.voicerec=false
 ro.vendor.audio.sdk.fluencetype=fluence
