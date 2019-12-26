@@ -1165,6 +1165,14 @@
         <ctl name="HPHR" value="Switch" />
     </path>
 
+    <path name="hph-highquality-mode">
+        <ctl name="RX HPH Mode" value="CLS_H_HIFI" />
+    </path>
+
+    <path name="hph-lowpower-mode">
+        <ctl name="RX HPH Mode" value="CLS_H_LOHIFI" />
+    </path>
+
     <path name="headset-mic">
         <path name="adc2" />
         <ctl name="ADC2 MUX" value="INP2" />
@@ -1266,6 +1274,9 @@
     </path>
 
     <path name="speaker-and-bt-sco">
+    </path>
+
+    <path name="speaker-and-bt-sco">
          <path name="speaker" />
          <path name="bt-sco-headset" />
     </path>
@@ -1273,9 +1284,6 @@
     <path name="speaker-and-bt-sco-wb">
          <path name="speaker" />
          <path name="bt-sco-headset-wb" />
-    </path>
-
-    <path name="bt-sco-headset-wb">
     </path>
 
     <path name="bt-sco-mic-wb">
