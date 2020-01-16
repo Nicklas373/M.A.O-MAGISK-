@@ -9,7 +9,7 @@
 - So Mido shouldn't have any problem with that feature, right?
 : If you're on stock ROM (MIUI) then you'll be fine, cause DAC in that ROM is perfectly working, but if you're on custom ROM, specially for oreo or higher then i'm not sure. Some apps still fine with accessing that flags, but some apps will getting problem cause some problem with decision of is that offloading or media streaming state.
 
-- What is the current problem that Mido have on Oreo or Pie to accessing DAC feature?
+- What is the current problem that Mido have on Oreo or Pie and now Q to accessing DAC feature?
 : Poweramp Audio Player will fine so far i've test with stock ROM (cause from DVC), but some apps will have problem to access direct flags because state of offloading or media streaming audio stream, so change this prop files from "audio.offload.enable=false"  to true can make device use other flags beside DEEP_BUFFER when streaming media or music.
 
 - Why you really want to fix this issue? although Poweramp available as secondary option?
