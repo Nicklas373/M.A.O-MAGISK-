@@ -5,7 +5,7 @@ This is a magisk module that will modified system audio properties to bring pure
 This package only have aim to restore internal DAC capatibility as bare minimum files without any harsh modification, no other else and not have any means to insult anyone that work with Mido since this is only for my personal use. (Anyone can use it, but DWYOR).
 
 # Project Status
-![Build](https://img.shields.io/badge/Build%20Status-Updated-green.svg) ![Version](https://img.shields.io/badge/Latest%20Version-0.9.9-blue.svg)
+![Build](https://img.shields.io/badge/Build%20Status-Updated-green.svg) ![Version](https://img.shields.io/badge/Latest%20Version-1.0.0-blue)
 ![Package](https://img.shields.io/badge/Package-Magisk-blue.svg) ![Magisk Template](https://img.shields.io/badge/Magisk%20Template-v19.0-blue.svg) 
 
 How to control Audio High Perfomance Mode:
@@ -23,11 +23,6 @@ Additional library :
 - /vendor/etc/mixer_paths_mtp.xml
 - /vendor/etc/sound_trigger_mixer_paths.xml
 - /vendor/etc/sound_trigger_mixer_platform_info.xml
-- /vendor/lib/soundfx/qcbassboost.so
-- /vendor/lib/soundfx/qcreverb.so
-- /vendor/lib/soundfx/qcvirt.so
-- /vendor/lib64/soundfx/qcbassboost.so
-- /vendor/lib64/soundfx/qcvirt.so
 
 Compatibitily ROM of this patch (this for already tested):
 - XenonHD Experimental Build
@@ -37,11 +32,9 @@ Compatibitily ROM of this patch (this for already tested):
 - Almost all Pie based ROMs will work
 
 NOTE: 
-- This module was created for almost all pie ROMs for Mido and if anyone want to use global version then check [Flashable](https://github.com/Nicklas373/Internal_DAC_Fixer/tree/flashable) branch. 
 - JamesDSP & Dirac audio effects was removed from audio config temporary (I'm not used that effects anymore)
-- Audio High Quality Mode not enable by default, it need user action on app to enable it to avoid some performance degredation that happen on high gaming or high perfomance usage.
+- Audio High Quality Mode set disable by default. User should enable it by itself when want to use it, to avoid some performance degredation that happen on high gaming or high perfomance usage.
 - Some features for audio high quality mode is not exist in all kernel, so not all features will same exist in every ROM.
-- If bootloop was happen after flashing this mod, try to flash compatibility package on this release [Compatibility](https://github.com/Nicklas373/M.A.O-MAGISK-/releases/tag/1.0-C)
 - This module won't compatible with any soundmod during i use pure audio effects from mido.
 
 Other Information Catalog:
