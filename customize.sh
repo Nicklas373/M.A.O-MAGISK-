@@ -17,11 +17,8 @@ ui_print " "
 
 if [ $DEVICE == "mido" ];
 	then
-		ui_print "Your '"$DEVICE"' is compatible"
-	
 		if [ $API == "28" ];
 			then
-				ui_print "Your '"$API"' is compatible"
 				ui_print " "
 				ui_print "****************** Software ********************"
 				ui_print "Custom Package  : Mido Audio Optimizer          "
