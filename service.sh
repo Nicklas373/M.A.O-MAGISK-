@@ -14,7 +14,6 @@ MODDIR=${0%/*}
 # 2. Ultra High Quality Audio Mode (UHQA Mode)
 # 3. Low Distortion AMP
 # 4. Headphone Impedance Detection
-# 5. Qualcomm Power Gating (BiQuads)
 
 # Let it sleep first for 30 second
 sleep 30
@@ -24,14 +23,10 @@ chmod 0644 /sys/module/snd_soc_wcd9330/parameters/high_perf_mode
 chmod 0644 /sys/module/snd_soc_wcd9335/parameters/huwifi_mode
 chmod 0644 /sys/module/snd_soc_wcd9335/parameters/low_distort_amp
 chmod 0644 /sys/module/snd_soc_wcd9xxx/parameters/impedance_detect_en
-chmod 0644 /sys/module/snd_soc_wcd9335/parameters/dig_core_collapse_enable
 
 # Disable Audio High Perfomance Mode by default on boot
 # Let M.A.O (App) configure it by itself (Userspace should control it)
-# Qualcomm BiQuads is rare to used it, so enable it to save power during system runtime
-# User can disable it using any capable apps or terminal command
 echo "0" > /sys/module/snd_soc_wcd9330/parameters/high_perf_mode
 echo "0" > /sys/module/snd_soc_wcd9335/parameters/huwifi_mode
 echo "0" > /sys/module/snd_soc_wcd9335/parameters/low_distort_amp
 echo "0" > /sys/module/snd_soc_wcd9xxx/parameters/impedance_detect_en
-echo "1" > /sys/module/snd_soc_wcd9335/parameters/dig_core_collapse_enable
