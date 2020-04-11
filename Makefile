@@ -2,7 +2,7 @@ NAME := M.A.O
 
 DATE := $(shell date "+%Y%m%d-%H%M")
 
-VER := v1.0.2
+VER := v1.0.3
 
 CODE := MAGISK
 
